@@ -262,7 +262,7 @@
             <h2>Get In Touch</h2>
             <!--<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>-->
             <div class="row">
-                <div class="8u 12u$(small)">
+                <!--<div class="8u 12u$(small)">
                     <form method="post" action="#">
                         <div class="row uniform 50%">
                             <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -273,14 +273,14 @@
                     <ul class="actions">
                         <li><input type="submit" value="Send Message" /></li>
                     </ul>
-                </div>
+                </div>-->
                 <div class="4u$ 12u$(small)">
                     <ul class="labeled-icons">
-                        <li>
+                        <!--<li>
                             <h3 class="icon fa-home"><span class="label">Address</span></h3>
                             台灣<br/>新北市新莊區<br />
 
-                        </li>
+                        </li>-->
                         <li>
                             <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
                             +886 0939660599
@@ -304,10 +304,10 @@
             <ul class="icons">
                 <li><a target="_blank" href="https://www.facebook.com/people/%E9%99%B3%E4%BF%A1%E5%AE%8F/100000295779706" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                 <li><a target="_blank" href="https://github.com/SteveChenHong" class="icon fa-github"><span class="label">Github</span></a></li>
-                <li><a onclick="toGetInTouch()" href="javascript:void(0)" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                <!--<li><a onclick="toGetInTouch()" href="javascript:void(0)" class="icon fa-envelope-o"><span class="label">Email</span></a></li>-->
             </ul>
             <ul class="copyright">
-                <li>&copy; 2017 &nbsp;| &nbsp;Steve 's resume.</li>
+                <li>&copy; 2018 &nbsp;| &nbsp;Steve 's resume.</li>
             </ul>
         </div>
     </footer>
@@ -344,14 +344,14 @@
         function sentence1() {
             $("#typed1").typed(
                 $.extend(initialTyped, {
-                    strings: ["<strong> 嗨 ! 我是陳信宏</strong>"],
+                    strings: ["嗨 ! 我是陳信宏"],
                     callback: function () { $(".typed-cursor").remove(); sentence2(); } // call function after typing is done
                 }));
         };
         function sentence2() {
             $("#typed2").typed(
                 $.extend(initialTyped, {
-                    strings: ["ASP.NET 網頁開發者"],
+                    strings: ["網站程式設計師"],
                     callback: function () { $(".typed-cursor").remove(); sentence3(); } // call function after typing is done
                 }));
         };
