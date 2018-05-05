@@ -18,6 +18,14 @@
     <link href="assets/css/processCircle.css" rel="stylesheet" />
     <link href="assets/css/typedCss.css" rel="stylesheet" />
     <style>
+        .displayNone{
+            display:none;
+        }
+        .caption div {
+            font-size: 24px;
+            color: #636161;
+            padding-bottom:5px;
+        }
     </style>
 </head>
 
@@ -28,7 +36,7 @@
         <div class="inner">
             <a href="#" class="image avatar"><img src="images/my.jpg" alt="" /></a>
             <h1>
-                <span id="typed1"></span><br/>
+                <span id="typed1"></span><br />
                 <span id="typed2"></span><br />
                 <span id="typed3"></span>
             </h1>
@@ -139,12 +147,12 @@
 
             <!-- Node.js Chart -->
             <!--<figure class="chart" data-percent="25">
-        <figcaption><span>Node</span></figcaption>
-        <img class="node" src="https://dl.dropboxusercontent.com/s/v28zws1p38tjph2/node.png">
-        <svg width="200" height="200">
-            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-        </svg>
-    </figure>-->
+                <figcaption><span>Node</span></figcaption>
+                <img class="node" src="https://dl.dropboxusercontent.com/s/v28zws1p38tjph2/node.png">
+                <svg width="200" height="200">
+                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                </svg>
+            </figure>-->
 
         </section>
 
@@ -155,17 +163,25 @@
                 <article class="6u 12u$(xsmall) work-item">
                     <a href="images/thumbs/designFont.png" class="image fit thumb"><img src="images/thumbs/designFont.png" alt="" /></a>
                     <div class="hidContent">
-                        <ul class="actions">
-                            <li>
-                                點選圖片左右邊可切換圖片
-                            </li>
-                        </ul>
+                        <div>設計資源庫(前台) - 首頁</div>
+                        <span style="display:block">(用滑鼠點擊圖片可左右切換)</span>
                     </div>
                     <h3>
                         設計資源庫(前台)<br />
                     </h3>
                     <p>管理和分享雄獅集團各網站元件、商標、圖片等等...</p>
                 </article>
+
+                <article class="6u 12u$(xsmall) work-item displayNone">
+                    <a href="images/thumbs/designFont.png" class="image fit thumb"><img src="" alt="" /></a>
+                    <div class="hidContent">
+                        <div>設計資源庫(前台) - 其他頁</div>
+                        <span style="display:block">(用滑鼠點擊圖片可左右切換)</span>
+                    </div>
+                    <h3></h3>
+                    <p></p>
+                </article>
+
                 <article class="6u$ 12u$(xsmall) work-item">
                     <a href="images/fulls/designBack.png" class="image fit thumb"><img src="images/thumbs/designBack.png" alt="" /></a>
                     <div class="hidContent">
@@ -238,7 +254,6 @@
                     <h3>JYiC勁園國際-認證系統</h3>
                     <p>認證管理系統(電腦軟體應用乙丙級)</p>
                 </article>
-
                 <article class="6u$ 12u$(xsmall) work-item">
                     <a href="images/fulls/care.png" class="image fit thumb"><img src="images/thumbs/care.png" alt="" /></a>
                     <div class="hidContent">
@@ -322,8 +337,13 @@
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/typed.js"></script>
-
     <script>
+        //--- poptrox start
+        var foo = $('#gallery');
+        foo.poptrox({
+            // caption: {selector:""}
+        });
+        //--- poptrox end
 
         function toGetInTouch() {
             $(window).scrollTop($("#three").offset().top);
@@ -381,7 +401,7 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-        //---topBtn end
+            //---topBtn end
     </script>
 </body>
 
