@@ -58,9 +58,8 @@ figcaption > span {
 
 .jquery {
     top: 84px;
-    left: 36px;
+    left: 44px;
 }
-
     .jquery + svg .outer {
         stroke: #1e2632;
     }

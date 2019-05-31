@@ -1,10 +1,13 @@
-﻿figure, figure * {
+﻿figure,
+figure * {
     -moz-box-sizing: initial;
     -webkit-box-sizing: initial;
     box-sizing: content-box;
 }
 
+
 /* Container styles */
+
 .chart {
     position: relative;
     display: inline-block;
@@ -13,41 +16,63 @@
     text-align: center;
 }
 
-    .chart figcaption {
-        padding: 50px 25px;
-        width: 100px;
-        height: 50px;
-        border: 20px solid #f0f0f0;
-        border-radius: 100px;
-        line-height: 50px;
-    }
+.chart figcaption {
+    padding: 50px 25px;
+    width: 100px;
+    height: 50px;
+    border: 20px solid #f0f0f0;
+    border-radius: 100px;
+    line-height: 50px;
+}
 
-    .chart img {
-        position: absolute;
-        max-width: 100px;
-        max-height: 100px;
-        background: white;
-    }
+.chart img {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    background: white;
+}
+
+
 /* END Container styles */
 
+
 /* Colors for the circles and positions for the graphics */
+
+.mvc {
+    top: 66px;
+    left: 45px;
+}
+
+.mvc+svg .outer {
+    stroke: #0f73bb;
+}
+
+.sql {
+    top: 80px;
+    left: 47px;
+}
+
+.sql+svg .outer {
+    stroke: #e61014;
+}
+
 .html {
     top: 50px;
     left: 45px;
 }
 
-    .html + svg .outer {
-        stroke: #e34f26;
-    }
+.html+svg .outer {
+    stroke: #e34f26;
+}
 
 .css {
     top: 55px;
     left: 48px;
 }
 
-    .css + svg .outer {
-        stroke: #0d84ce;
-    }
+.css+svg .outer {
+    stroke: #0d84ce;
+}
 
 .javascript {
     max-width: 90px;
@@ -56,9 +81,36 @@
     left: 45px;
 }
 
-    .javascript + svg .outer {
-        stroke: #f0e040;
-    }
+.javascript+svg .outer {
+    stroke: #f0e040;
+}
+
+.jquery {
+    top: 84px;
+    left: 44px;
+}
+
+.jquery+svg .outer {
+    stroke: #1e2632;
+}
+
+.knockout {
+    top: 78px;
+    left: 47px;
+}
+
+.knockout+svg .outer {
+    stroke: #e83516;
+}
+
+.vue {
+    top: 52px;
+    left: 45px;
+}
+
+.vue+svg .outer {
+    stroke: #41b883;
+}
 
 .node {
     width: 200px;
@@ -67,9 +119,9 @@
     left: 45px;
 }
 
-    .node + svg .outer {
-        stroke: #83cd29;
-    }
+.node+svg .outer {
+    stroke: #83cd29;
+}
 
 .chart svg {
     position: absolute;
@@ -92,10 +144,13 @@
     stroke-dashoffset: 534 !important;
     -webkit-animation-play-state: paused;
 }
+
+
 /* END Circle colors and graphic positions */
 
 
 /* Set the initial values for the animation */
+
 .chart[data-percent='100'] .outer {
     stroke-dashoffset: 0;
     -webkit-animation: show100 2s;
@@ -131,14 +186,17 @@
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
+
+
 /* END set initial animation values */
 
+
 /* Keyframes for the initial animation */
+
 @-webkit-keyframes show100 {
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 0;
     }
@@ -148,7 +206,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 0;
     }
@@ -158,7 +215,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 106;
     }
@@ -168,7 +224,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 106;
     }
@@ -178,7 +233,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 133;
     }
@@ -188,7 +242,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 133;
     }
@@ -198,7 +251,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 212;
     }
@@ -208,18 +260,15 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 212;
     }
 }
 
-
 @-webkit-keyframes show50 {
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 267;
     }
@@ -229,7 +278,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 267;
     }
@@ -239,7 +287,6 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 401;
     }
@@ -249,9 +296,10 @@
     from {
         stroke-dashoffset: 537;
     }
-
     to {
         stroke-dashoffset: 401;
     }
 }
+
+
 /* END Keyframes for the initial animation */
