@@ -18,7 +18,7 @@
         }
         
         .caption div {
-            font-size: 18px;
+            font-size: 2.5vmin;
             color: #636161;
             /*padding-bottom: 2px;*/
             text-align: left;
@@ -57,7 +57,7 @@
         <section id="one">
             <header class="major">
                 <h2>
-                    About me
+                    關於我
                 </h2>
             </header>
             <p style="text-indent:31px;">我現在擔任網頁程式設計師，身為IT人員我秉持著不斷從學習和實務中更強化自己的能力，期許自己能夠更上一層樓，讓自己成為可以在團隊合作或獨立製作中發揮所能的人才！
@@ -70,7 +70,7 @@
         <section id="one_2">
             <header>
                 <h2>
-                    Skill
+                    技能
                 </h2>
             </header>
 
@@ -150,7 +150,7 @@
 
         <!-- Two -->
         <section id="two">
-            <h2>Works</h2>
+            <h2>曾參與過的專案</h2>
             <div class="row">
                 <div class="row">
                     <article v-for="(item, index) in works" v-bind:class="[!item.visible?'displayNone':'',item.class]" class="12u$(xsmall) work-item">
@@ -172,7 +172,7 @@
 
         <!-- Three -->
         <section id="three">
-            <h2>Get In Touch</h2>
+            <h2>聯絡我</h2>
             <!--<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>-->
             <div class="row">
                 <!--<div class="8u 12u$(small)">
@@ -226,7 +226,7 @@
             </ul>
         </div>
     </footer>
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -236,224 +236,15 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/vue.min.js"></script>
+    <script src="assets/js/worksdata.js"></script>
     <script>
         //---vue start
         var app = new Vue({
                 el: '#main',
-                data: {
-                    designFont: [{
-                        title: "設計資源庫(前台)",
-                        titleDesc: "管理和分享雄獅集團各網站元件、商標、圖片等等...",
-                        caption: "設計資源庫(前台) - 首頁",
-                        captionDesc: "可以直接輸入關鍵字查詢元件，或選擇的元件分類",
-                        imgName: "designFont1.jpg",
-                        class: "6u",
-                        visible: true
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 登入",
-                        imgName: "designFont2.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 下載預覽網頁控件",
-                        imgName: "designFont3.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 雄好玩(吉祥物)圖片創建、下載",
-                        imgName: "designFont4.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 創建雄好玩(吉祥物)",
-                        imgName: "designFont5.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 創建雄好玩(吉祥物)審核流程",
-                        imgName: "designFont6.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 暫存創建到一半的雄好玩(吉祥物)",
-                        imgName: "designFont7.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 創建雄好玩(吉祥物)申請審核",
-                        imgName: "designFont8.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 搜尋結果",
-                        imgName: "designFont9.jpg",
-                        class: "",
-                        visible: false
-                    }, {
-                        title: "",
-                        titleDesc: "",
-                        caption: "設計資源庫(前台) - 訊息通知",
-                        imgName: "designFont10.jpg",
-                        class: "",
-                        visible: false
-                    }],
-                    works: []
-                        //{
-                        //    title: "設計資源庫(前台)",
-                        //    titleDesc: "管理和分享雄獅集團各網站元件、商標、圖片等等...",
-                        //    caption: "設計資源庫(前台) - 首頁",
-                        //    captionDesc: "可以直接輸入關鍵字查詢元件，或選擇的元件分類",
-                        //    imgName: "designFont1.jpg",
-                        //    class: "6u",
-                        //    visible: true
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 登入",
-                        //    imgName: "designFont2.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 下載預覽網頁控件",
-                        //    imgName: "designFont3.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 雄好玩(吉祥物)圖片創建、下載",
-                        //    imgName: "designFont4.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 創建雄好玩(吉祥物)",
-                        //    imgName: "designFont5.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 創建雄好玩(吉祥物)審核流程",
-                        //    imgName: "designFont6.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 暫存創建到一半的雄好玩(吉祥物)",
-                        //    imgName: "designFont7.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 創建雄好玩(吉祥物)申請審核",
-                        //    imgName: "designFont8.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 搜尋結果",
-                        //    imgName: "designFont9.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "",
-                        //    titleDesc: "",
-                        //    caption: "設計資源庫(前台) - 訊息通知",
-                        //    imgName: "designFont10.jpg",
-                        //    class: "",
-                        //    visible: false
-                        //},
-                        //{
-                        //    title: "設計資源庫(後台)",
-                        //    titleDesc: "管理\"設計資源庫\"前台網站架構、人員權限、審核元件、公布消息等等...",
-                        //    caption: "設計資源庫(後台) - 首頁",
-                        //    imgName: "designBack.png",
-                        //    class: "6u$",
-                        //    visible: true
-                        //},
-                        //{
-                        //    title: "MOSME摩思米(前後台)",
-                        //    titleDesc: "教材題庫整合、測驗或練習、自訂組卷、班級管理等等...",
-                        //    caption: "MOSME摩思米(前台) - 首頁",
-                        //    imgName: "mosme.png",
-                        //    class: "6u",
-                        //    visible: true
-                        //},
-                        //{
-                        //    title: "Hoogaa網",
-                        //    titleDesc: "即時教師與學生互動測驗，即時顯示作答與排名，有競爭和趣味性",
-                        //    caption: "Hoogaa網 - 首頁",
-                        //    imgName: "hoogaa.png",
-                        //    class: "6u$",
-                        //    visible: true
-                        //},
-                        //{
-                        //    title: "GLAD認證系統",
-                        //    titleDesc: "認證管理系統",
-                        //    caption: "GLAD認證系統 - 首頁",
-                        //    imgName: "glad.png",
-                        //    class: "6u",
-                        //    visible: true
-                        //},
-                        //{
-                        //    title: "台灣創新科技管理發展協會認證系統",
-                        //    titleDesc: "認證管理系統",
-                        //    caption: "台灣創新科技管理發展協會認證系統 - 首頁",
-                        //    imgName: "itm.png",
-                        //    class: "6u$",
-                        //    visible: true
-                        //},
-                        //{
-                        //    title: "JYiC勁園國際認證系統",
-                        //    titleDesc: "認證管理系統(電腦軟體應用乙丙級)",
-                        //    caption: "JYiC勁園國際認證系統 - 首頁",
-                        //    imgName: "jyic.png",
-                        //    class: "6u",
-                        //    visible: true
-                        //},
-                        //{
-                        //    title: "中華流通連鎖產學聯盟協會認證系統",
-                        //    titleDesc: "認證管理系統",
-                        //    caption: "中華流通連鎖產學聯盟協會認證系統 - 首頁",
-                        //    imgName: "care.png",
-                        //    class: "6u$",
-                        //    visible: true
-                        //},
-                },
+                data: worksdata,
                 created: function() {
                     this.works = this.works.concat(this.designFont);
+                    this.works = this.works.concat(this.designBack);
                 },
                 mounted: function() {
                     this.$nextTick(function() {
