@@ -581,7 +581,16 @@ body {
     margin-left: 8.33333%;
 }
 
+@media screen and (min-width: 1800px) {
+    .row>article {
+        height: 360.66px;
+    }
+}
+
 @media screen and (max-width: 1800px) {
+    .row>article {
+        height: 270.75px;
+    }
     .row>* {
         padding: 0 0 0 2.5em;
     }
