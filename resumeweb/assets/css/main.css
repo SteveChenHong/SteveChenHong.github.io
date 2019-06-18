@@ -23,6 +23,11 @@
     background-color: #555;
 }
 
+#header strong,
+#header b {
+    color: #ffffff;
+}
+
 
 /*
 	Strata by HTML5 UP

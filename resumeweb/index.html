@@ -38,7 +38,7 @@
         <div class="inner">
             <a href="#" class="image avatar"><img src="images/my.jpg" alt="" /></a>
             <h1>
-                <span id="typed1"></span><br />
+                <strong><span id="typed1"></span></strong><br />
                 <span id="typed2"></span><br />
                 <span id="typed3"></span>
             </h1>
@@ -239,6 +239,8 @@
                 created: function() {
                     this.works = this.works.concat(this.designFont);
                     this.works = this.works.concat(this.designBack);
+                    this.works = this.works.concat(this.hoogaaStudent);
+                    this.works = this.works.concat(this.hoogaaTeacher);
                 },
                 mounted: function() {
                     this.$nextTick(function() {
