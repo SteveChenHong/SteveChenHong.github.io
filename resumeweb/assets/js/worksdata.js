@@ -1,22 +1,215 @@
 var worksdata = {
     join: [{
-        title: "旅天下-加盟平台",
-        titleDesc: "提供旅天下的加盟商使用的後台系統",
-        caption: "加盟平台 - 登入畫面",
-        captionDesc: "使用者須透過OTP進行登入",
-        imgName: "join1.jpg",
-        class: "6u",
-        visible: true
-    }],
+            title: "加盟平台",
+            titleDesc: "提供旅天下的加盟商使用的後台系統",
+            caption: "加盟平台 - 登入畫面",
+            captionDesc: "輸入帳號密碼、一次性密碼(OTP)進行登入",
+            imgName: "join1.jpg",
+            class: "6u",
+            visible: true
+        }, {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 首頁",
+            captionDesc: "查看最新系統留言、訂單留言、其他登入者資訊",
+            imgName: "join2.jpg",
+            class: "",
+            visible: false
+        }, {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 團體銷售",
+            captionDesc: "顯示團體產品列表",
+            imgName: "join3.jpg",
+            class: "",
+            visible: false
+        }, {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 確認產品",
+            captionDesc: "確認選購的產品、選擇參團人數",
+            imgName: "join6.jpg",
+            class: "",
+            visible: false
+        }, {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 填寫旅客資料",
+            captionDesc: "填寫旅客資料",
+            imgName: "join7.jpg",
+            class: "",
+            visible: false
+        }, {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 訂單列表",
+            captionDesc: "查看訂單列表",
+            imgName: "join4.jpg",
+            class: "",
+            visible: false
+        }, {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 訂單明細",
+            captionDesc: "查看訂單明細、處理訂單相關功能",
+            imgName: "join8.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 門店應付",
+            captionDesc: "查看門店應付帳款等資訊",
+            imgName: "join9.jpg",
+            class: "",
+            visible: false
+        }, {
+            title: "",
+            titleDesc: "",
+            caption: "加盟平台 - 收退款審核",
+            captionDesc: "處理收退款審核作業",
+            imgName: "join5.jpg",
+            class: "",
+            visible: false
+        }
+    ],
     mosme: [{
-        title: "Mosme摩斯米",
-        titleDesc: "教材題庫整合、測驗或練習、自訂組卷、班級管理等等...",
-        caption: "Mosme摩斯米 - 首頁",
-        captionDesc: "可快速查詢書籍相關資料",
-        imgName: "mosme1.jpg",
-        class: "6u",
-        visible: true
-    }],
+            title: "Mosme摩斯米",
+            titleDesc: "教材題庫整合、測驗或練習、自訂組卷、班級管理等等...",
+            caption: "Mosme摩斯米 - 首頁",
+            captionDesc: "輸入關鍵字可快速搜尋相關書籍資料",
+            imgName: "mosme1.jpg",
+            class: "6u",
+            visible: true
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 書籍列表",
+            captionDesc: "顯示書籍產品",
+            imgName: "mosme2.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 書籍詳細資料",
+            captionDesc: "顯示書籍簡介、題庫練習功能、書籍開通功能",
+            imgName: "mosme3.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 我的書單",
+            captionDesc: "顯示個人開通過的書籍",
+            imgName: "mosme4.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 開通審核",
+            captionDesc: "提供業務處理書籍開通、查詢開通紀錄等功能",
+            imgName: "mosme5.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 課程管理",
+            captionDesc: "提供教師對課程綁定相關書籍，將學生加入課程、發布公告、上傳教材、組卷等功能",
+            imgName: "mosme6.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 組卷流程1",
+            captionDesc: "選擇",
+            imgName: "mosme7.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 組卷流程2",
+            captionDesc: "",
+            imgName: "mosme8.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 組卷流程3",
+            captionDesc: "",
+            imgName: "mosme9.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 組卷流程4",
+            captionDesc: "",
+            imgName: "mosme10.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 組卷流程5",
+            captionDesc: "",
+            imgName: "mosme11.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 題目預覽",
+            captionDesc: "",
+            imgName: "mosme12.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 試卷明細",
+            captionDesc: "",
+            imgName: "mosme13.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 線上測驗、練習",
+            captionDesc: "",
+            imgName: "mosme14.jpg",
+            class: "",
+            visible: false
+        },
+        {
+            title: "",
+            titleDesc: "",
+            caption: "Mosme摩斯米 - 成績報表",
+            captionDesc: "",
+            imgName: "mosme15.jpg",
+            class: "",
+            visible: false
+        }
+    ],
     hoogaaTeacher: [{
             title: "hoogaa(教師端)",
             titleDesc: "即互動測驗，即時顯示作答與排名，提升競爭和趣味性",
