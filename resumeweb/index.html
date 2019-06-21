@@ -70,7 +70,7 @@
             <!-- .net mvc Chart -->
             <figure title=".NET MVC" class="chart" data-percent="80">
                 <figcaption>.netmvc</figcaption>
-                <img class="mvc" src="images/skill/mvc.png">
+                <img class="mvc" v-lazy="'images/skill/mvc.png'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -79,7 +79,7 @@
             <!-- SQL Server Chart -->
             <figure title="SQL Server" class="chart" data-percent="75">
                 <figcaption>SQL</figcaption>
-                <img class="sql" src="images/skill/sqlserver.png">
+                <img class="sql" v-lazy="'images/skill/sqlserver.png'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -88,7 +88,7 @@
             <!-- HTML Chart -->
             <figure title="HTML5" class="chart" data-percent="80">
                 <figcaption>HTML</figcaption>
-                <img class="html" src="images/skill/html.svg">
+                <img class="html" v-lazy="'images/skill/html.svg'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -97,7 +97,7 @@
             <!-- CSS Chart -->
             <figure title="CSS" class="chart" data-percent="60">
                 <figcaption>CSS</figcaption>
-                <img class="css" src="images/skill/css.png">
+                <img class="css" v-lazy="'images/skill/css.png'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -106,7 +106,7 @@
             <!-- JavaScript Chart -->
             <figure title="JavaScript" class="chart" data-percent="75">
                 <figcaption>Javascript</figcaption>
-                <img class="javascript" src="images/skill/javascript.svg">
+                <img class="javascript" v-lazy="'images/skill/javascript.svg'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -115,7 +115,7 @@
             <!-- jQuery Chart -->
             <figure title="jQuery" class="chart" data-percent="80">
                 <figcaption>jQuery</figcaption>
-                <img class="jquery" src="images/skill/jquery.png">
+                <img class="jquery" v-lazy="'images/skill/jquery.png'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -124,7 +124,7 @@
             <!-- Knockout.js JS Chart -->
             <figure title="Knockout.js" class="chart" data-percent="50">
                 <figcaption>Knockout</figcaption>
-                <img class="knockout" src="images/skill/knockoutjs.png">
+                <img class="knockout" v-lazy="'images/skill/knockoutjs.png'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -133,7 +133,7 @@
             <!-- Vue.js Chart -->
             <figure title="Vue.js" class="chart" data-percent="50">
                 <figcaption>Vue</figcaption>
-                <img class="vue" src="images/skill/vuejs.png">
+                <img class="vue" v-lazy="'images/skill/vuejs.png'">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="row">
                     <article v-for="(item, index) in works" v-bind:class="[!item.visible?'displayNone':'',item.class]" class="12u$(xsmall) work-item">
-                        <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img :data-src="'images/thumbs/'+item.imgName" /></a>
+                        <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img v-lazy="'images/thumbs/'+item.imgName" /></a>
                         <div class="hidContent">
                             <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
                             <div v-if="item.captionDesc"><span class="cationSpan">說明：</span>{{item.captionDesc}}</div>
@@ -229,7 +229,10 @@
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/worksdata.js"></script>
+    <script src="assets/js/vue-lazyload.js"></script>
     <script>
+        Vue.use(VueLazyload)
+
         //---vue start
         var app = new Vue({
                 el: '#main',
