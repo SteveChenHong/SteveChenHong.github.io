@@ -150,7 +150,7 @@
                         <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img :data-src="'images/thumbs/'+item.imgName" /></a>
                         <div class="hidContent">
                             <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
-                            <div><span class="cationSpan">說明：</span>{{item.captionDesc}}</div>
+                            <div v-if="item.captionDesc"><span class="cationSpan">說明：</span>{{item.captionDesc}}</div>
                             <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
                         </div>
                         <h3>{{item.title}}</h3>
@@ -235,12 +235,13 @@
                 el: '#main',
                 data: worksdata,
                 created: function() {
-                    this.works = this.works.concat(this.designFont);
-                    this.works = this.works.concat(this.designBack);
+                    this.works = this.works.concat(this.lionbobby);
                     this.works = this.works.concat(this.hoogaaStudent);
                     this.works = this.works.concat(this.hoogaaTeacher);
-                    this.works = this.works.concat(this.join);
                     this.works = this.works.concat(this.mosme);
+                    this.works = this.works.concat(this.designFont);
+                    this.works = this.works.concat(this.designBack);
+                    this.works = this.works.concat(this.join);
                 },
                 mounted: function() {
                     this.$nextTick(function() {

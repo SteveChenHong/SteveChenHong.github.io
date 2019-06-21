@@ -1,4 +1,21 @@
 var worksdata = {
+    lionbobby: [{
+        title: "雄保旅遊網",
+        titleDesc: "旅遊產品購買、報名",
+        caption: "雄保旅遊網 - 首頁",
+        captionDesc: "",
+        imgName: "lionbobby1.jpg",
+        class: "6u",
+        visible: true
+    }, {
+        title: "",
+        titleDesc: "",
+        caption: "雄保旅遊網 - 搜尋結果頁",
+        captionDesc: "顯示產品列表、包含月曆選團、比較、加入收藏、看過紀錄等功能",
+        imgName: "lionbobby2.jpg",
+        class: "",
+        visible: false
+    }],
     join: [{
             title: "加盟平台",
             titleDesc: "提供旅天下的加盟商使用的後台系統",
@@ -132,7 +149,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "Mosme摩斯米 - 組卷流程1",
-            captionDesc: "選擇",
+            captionDesc: "選擇組卷題庫",
             imgName: "mosme7.jpg",
             class: "",
             visible: false
@@ -141,7 +158,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "Mosme摩斯米 - 組卷流程2",
-            captionDesc: "",
+            captionDesc: "選擇組卷考試範圍",
             imgName: "mosme8.jpg",
             class: "",
             visible: false
@@ -150,7 +167,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "Mosme摩斯米 - 組卷流程3",
-            captionDesc: "",
+            captionDesc: "選擇組卷題型、題數、配分",
             imgName: "mosme9.jpg",
             class: "",
             visible: false
@@ -159,7 +176,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "Mosme摩斯米 - 組卷流程4",
-            captionDesc: "",
+            captionDesc: "選擇組卷章節配題目",
             imgName: "mosme10.jpg",
             class: "",
             visible: false
@@ -168,7 +185,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "Mosme摩斯米 - 組卷流程5",
-            captionDesc: "",
+            captionDesc: "設定試卷詳細資料",
             imgName: "mosme11.jpg",
             class: "",
             visible: false
@@ -185,7 +202,7 @@ var worksdata = {
         {
             title: "",
             titleDesc: "",
-            caption: "Mosme摩斯米 - 試卷明細",
+            caption: "Mosme摩斯米 - 匯出試卷",
             captionDesc: "",
             imgName: "mosme13.jpg",
             class: "",
@@ -214,7 +231,7 @@ var worksdata = {
             title: "hoogaa(教師端)",
             titleDesc: "即互動測驗，即時顯示作答與排名，提升競爭和趣味性",
             caption: "hoogaa(教師端) - 產生PIN碼、等待學生進入",
-            captionDesc: "產生PIN碼提供給學生輸入、檢視當前有誰進入競賽",
+            captionDesc: "產生PIN碼提供給學生輸入、檢視當前進入的學生",
             imgName: "hoogaa-teacher1.jpg",
             class: "6u",
             visible: true
@@ -223,7 +240,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "hoogaa(教師端) - 開始考試倒數",
-            captionDesc: "由教師端統一開始進入競賽倒數",
+            captionDesc: "教師端統一開始進入競賽倒數",
             imgName: "hoogaa-teacher2.jpg",
             class: "",
             visible: false
@@ -241,7 +258,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "hoogaa(教師端) - 競賽最終結果",
-            captionDesc: "考試結束後顯示考生答題資訊報表、排名及分數",
+            captionDesc: "顯示考生答題資訊報表、排名及分數",
             imgName: "hoogaa-teacher4.jpg",
             class: "",
             visible: false
@@ -250,7 +267,7 @@ var worksdata = {
             title: "",
             titleDesc: "",
             caption: "hoogaa(教師端) - 試題解析",
-            captionDesc: "讓老師可以檢討考題，也可以查看學生作答狀況",
+            captionDesc: "顯示試題解析、查看每題學生作答狀況",
             imgName: "hoogaa-teacher5.jpg",
             class: "",
             visible: false
