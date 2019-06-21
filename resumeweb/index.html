@@ -88,7 +88,7 @@
             <!-- HTML Chart -->
             <figure title="HTML5" class="chart" data-percent="80">
                 <figcaption>HTML</figcaption>
-                <img class="html" src="images/skill/html.svg">
+                <img class="html" src="images/skill/html.png">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -106,7 +106,7 @@
             <!-- JavaScript Chart -->
             <figure title="JavaScript" class="chart" data-percent="75">
                 <figcaption>Javascript</figcaption>
-                <img class="javascript" src="images/skill/javascript.svg">
+                <img class="javascript" src="images/skill/javascript.png">
                 <svg width="200" height="200">
                     <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
                 </svg>
@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="row">
                     <article v-for="(item, index) in works" v-bind:class="[!item.visible?'displayNone':'',item.class]" class="12u$(xsmall) work-item">
-                        <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img :data-src="'images/thumbs/'+item.imgName" /></a>
+                        <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img :data-src="'images/fulls/'+item.imgName" /></a>
                         <div class="hidContent">
                             <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
                             <div v-if="item.captionDesc"><span class="cationSpan">說明：</span>{{item.captionDesc}}</div>
