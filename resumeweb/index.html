@@ -15,14 +15,14 @@
         .displayNone {
             display: none;
         }
-        
+
         .caption div {
             font-size: 2.5vmin;
             color: #636161;
             /*padding-bottom: 2px;*/
             text-align: left;
         }
-        
+
         .cationSpan {
             margin-left: 5px;
             font-weight: bold;
@@ -146,16 +146,113 @@
             <h2>曾參與過的專案</h2>
             <div class="row">
                 <div class="row">
-                    <article v-for="(item, index) in works" v-bind:class="[!item.visible?'displayNone':'',item.class]" class="12u$(xsmall) work-item">
-                        <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img :data-src="'images/fulls/'+item.imgName" /></a>
+                    <!--雄保 Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/lionbobby1.jpg" class="image fit thumb"><img
+                                src="images/fulls/lionbobby1.jpg" /></a>
                         <div class="hidContent">
-                            <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
-                            <div v-if="item.captionDesc"><span class="cationSpan">說明：</span>{{item.captionDesc}}</div>
+                            <div><span class="cationSpan">標題：</span>雄保旅遊網 - 首頁</div>
+                            <div><span class="cationSpan"></span></div>
                             <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
                         </div>
-                        <h3>{{item.title}}</h3>
-                        <p>{{item.titleDesc}}</p>
+                        <h3>雄保旅遊網</h3>
+                        <p>旅遊產品購買、報名</p>
                     </article>
+                    <sub-article v-for="item in worksdata.lionbobby" v-bind:item="item"></sub-article>
+                    <!--雄保 End-->
+
+                    <!--hoogaa(學生端) Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/hoogaa-student1.jpg" class="image fit thumb"><img
+                                src="images/fulls/hoogaa-student1.jpg" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>hoogaa(學生端) - 輸入PIN碼</div>
+                            <div><span class="cationSpan">說明：</span>學生輸入教師端所提供的代碼，即可進入等待競賽畫面</div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>hoogaa(學生端)</h3>
+                        <p>即互動測驗，即時顯示作答與排名，提升競爭和趣味性</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.hoogaaStudent" v-bind:item="item"></sub-article>
+                    <!--hoogaa(學生端) End-->
+
+                    <!--hoogaa(老師端) Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/hoogaa-teacher1.jpg" class="image fit thumb"><img
+                                src="images/fulls/hoogaa-teacher1.jpg" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>hoogaa(教師端) - 產生PIN碼、等待學生進入</div>
+                            <div><span class="cationSpan">說明：</span>產生PIN碼提供給學生輸入、檢視當前進入的學生</div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>hoogaa(教師端)</h3>
+                        <p>即互動測驗，即時顯示作答與排名，提升競爭和趣味性</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.hoogaaTeacher" v-bind:item="item"></sub-article>
+                    <!--hoogaa(老師端) End-->
+
+                    <!--加盟平台 Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/join1.jpg" class="image fit thumb"><img
+                                src="images/fulls/join1.jpg" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>加盟平台 - 登入畫面</div>
+                            <div><span class="cationSpan">說明：</span>輸入帳號密碼、一次性密碼(OTP)進行登入</div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>加盟平台</h3>
+                        <p>提供旅天下的加盟商使用的後台系統</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.join" v-bind:item="item"></sub-article>
+                    <!--加盟平台 End-->
+
+                    <!--mosme Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/mosme1.jpg" class="image fit thumb"><img
+                                src="images/fulls/mosme1.jpg" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>Mosme摩斯米 - 首頁</div>
+                            <div><span class="cationSpan">說明：</span>輸入關鍵字可快速搜尋相關書籍資料</div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>Mosme摩斯米</h3>
+                        <p>教材題庫整合、測驗或練習、自訂組卷、班級管理等等...</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.mosme" v-bind:item="item"></sub-article>
+                    <!--mosme End-->
+
+                    <!--設計資源庫(前台) Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/designFont1.jpg" class="image fit thumb"><img
+                                src="images/fulls/designFont1.jpg" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>設計資源庫(前台) - 首頁</div>
+                            <div><span class="cationSpan">說明：</span>可以直接輸入關鍵字查詢元件，或選擇的元件分類</div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>設計資源庫(前台)</h3>
+                        <p>管理和分享雄獅集團各網站元件、商標、圖片等等...</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.designFont" v-bind:item="item"></sub-article>
+                    <!--設計資源庫(前台) End-->
+
+                    <!--設計資源庫(後台) Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/designBack1.jpg" class="image fit thumb"><img
+                                src="images/fulls/designBack1.jpg" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>設計資源庫(後台) - 登入</div>
+                            <div><span class="cationSpan">說明：</span>登入公司ERP系統帳號密碼</div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>設計資源庫(後台)</h3>
+                        <p>管理和分享雄獅集團各網站元件、商標、圖片等等...</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.designBack" v-bind:item="item"></sub-article>
+                    <!--設計資源庫(後台) End-->
+
+
+
                 </div>
             </div>
             <ul class="actions">
@@ -231,30 +328,40 @@
     <script src="assets/js/worksdata.js"></script>
     <script>
         //---vue start
+
+        var sub_article = {
+            props: ['item'],
+            template: `<article class="12u$(xsmall) work-item displayNone">
+                        <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img :data-src="'images/fulls/'+item.imgName" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
+                            <div v-if="item.captionDesc"><span class="cationSpan">說明：</span>{{item.captionDesc}}</div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3></h3>
+                        <p></p>
+                    </article>`
+        }
+
         var app = new Vue({
-                el: '#main',
-                data: worksdata,
-                created: function() {
-                    this.works = this.works.concat(this.lionbobby);
-                    this.works = this.works.concat(this.hoogaaStudent);
-                    this.works = this.works.concat(this.hoogaaTeacher);
-                    this.works = this.works.concat(this.mosme);
-                    this.works = this.works.concat(this.designFont);
-                    this.works = this.works.concat(this.designBack);
-                    this.works = this.works.concat(this.join);
-                },
-                mounted: function() {
-                    this.$nextTick(function() {
-                        $("article").each(function(i, e) {
-                            if ($(this).hasClass("6u") || $(this).hasClass("6u$")) {
-                                var $img = $(this).find("img");
-                                $img.attr("src", $img.data("src"));
-                            }
-                        })
+            el: '#main',
+            data: worksdata,
+            components: {
+                'sub-article': sub_article,
+            },
+            mounted: function () {
+                this.$nextTick(function () {
+                    $("article").each(function (i, e) {
+                        if ($(this).hasClass("6u") || $(this).hasClass("6u$")) {
+                            var $img = $(this).find("img");
+                            $img.attr("src", $img.data("src"));
+                        }
                     })
-                }
-            })
-            //---vue end
+                })
+            }
+        })
+
+        //---vue end
 
         //--- poptrox start
         var foo = $('#gallery');
@@ -274,7 +381,7 @@
             backDelay: 750, // pause before backspacing
             loop: false, // loop on or off (true or false)
             loopCount: false, // number of loops, false = infinite,
-            onStringTyped: function() {},
+            onStringTyped: function () {},
 
         }
         sentence1();
@@ -283,10 +390,10 @@
             $("#typed1").typed(
                 $.extend(initialTyped, {
                     strings: ["嗨 ! 我是陳信宏"],
-                    callback: function() {
-                            $(".typed-cursor").remove();
-                            sentence2();
-                        } // call function after typing is done
+                    callback: function () {
+                        $(".typed-cursor").remove();
+                        sentence2();
+                    } // call function after typing is done
                 }));
         };
 
@@ -294,10 +401,10 @@
             $("#typed2").typed(
                 $.extend(initialTyped, {
                     strings: ["網站程式設計師"],
-                    callback: function() {
-                            $(".typed-cursor").remove();
-                            sentence3();
-                        } // call function after typing is done
+                    callback: function () {
+                        $(".typed-cursor").remove();
+                        sentence3();
+                    } // call function after typing is done
                 }));
         };
 
@@ -305,14 +412,14 @@
             $("#typed3").typed(
                 $.extend(initialTyped, {
                     strings: ["持續學習，追尋更好的自己"],
-                    callback: function() {}
+                    callback: function () {}
                 }));
         }
         //---typed end
 
         //---topBtn start
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
+        window.onscroll = function () {
             scrollFunction()
         };
 
