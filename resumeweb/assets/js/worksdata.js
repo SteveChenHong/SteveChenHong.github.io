@@ -3,6 +3,42 @@ var worksdata = {
         caption: "雄保旅遊網 - 搜尋結果頁",
         captionDesc: "顯示產品列表、包含月曆選團、比較、加入收藏、看過紀錄等功能",
         imgName: "lionbobby2.jpg"
+    }, {
+        caption: "雄保旅遊網 - 行程介紹頁1",
+        captionDesc: "顯示產品月曆、產品詳細資訊",
+        imgName: "lionbobby3.jpg"
+    }, {
+        caption: "雄保旅遊網 - 行程介紹頁2",
+        captionDesc: "顯示行程介紹、注意事項等內容",
+        imgName: "lionbobby4.jpg"
+    }, {
+        caption: "雄保旅遊網 - 選擇參團人數",
+        captionDesc: "選擇人數並確認旅遊契約書等須知訊息",
+        imgName: "lionbobby5.jpg"
+    }, {
+        caption: "雄保旅遊網 - 填寫旅客資料",
+        captionDesc: "",
+        imgName: "lionbobby6.jpg"
+    }, {
+        caption: "雄保旅遊網 - 訂單明細",
+        captionDesc: "",
+        imgName: "lionbobby7.jpg"
+    }, {
+        caption: "雄保旅遊網 - 訂單列表",
+        captionDesc: "",
+        imgName: "lionbobby8.jpg"
+    }, {
+        caption: "雄保旅遊網 - 我的收藏列表",
+        captionDesc: "顯示所收藏的產品",
+        imgName: "lionbobby9.jpg"
+    }, {
+        caption: "雄保旅遊網 - 產品比較",
+        captionDesc: "比較最多三項產品差異",
+        imgName: "lionbobby10.jpg"
+    }, {
+        caption: "雄保旅遊網 - 瀏覽紀錄",
+        captionDesc: "顯示瀏覽過的產品紀錄",
+        imgName: "lionbobby11.jpg"
     }],
     join: [{
             caption: "加盟平台 - 首頁",
