@@ -85,6 +85,17 @@ figure * {
     stroke: #f0e040;
 }
 
+.bootstrap {
+    max-width: 90px;
+    max-height: 90px;
+    top: 45px;
+    left: 45px;
+}
+
+    .bootstrap + svg .outer {
+        stroke: #5e29a9;
+    }
+
 .jquery {
     top: 84px;
     left: 44px;
