@@ -39,13 +39,12 @@ figure * {
 /* Colors for the circles and positions for the graphics */
 
 .mvc {
-    top: 66px;
+    top: 45px;
     left: 45px;
 }
-
-.mvc+svg .outer {
-    stroke: #0f73bb;
-}
+    .mvc + svg .outer {
+        stroke: #6c429c;
+    }
 
 .sql {
     top: 80px;
@@ -93,7 +92,7 @@ figure * {
 }
 
     .bootstrap + svg .outer {
-        stroke: #5e29a9;
+        stroke: #5b27a6;
     }
 
 .jquery {
