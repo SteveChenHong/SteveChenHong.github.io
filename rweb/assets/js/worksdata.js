@@ -1,4 +1,29 @@
 var worksdata = {
+    lifetour:[{
+        caption: "五福旅遊網 - 搜尋結果頁2",
+        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        imgName: "lifetour2.png"
+    },{
+        caption: "五福旅遊網 - 搜尋結果頁3(手機版)",
+        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        imgName: "lifetour3.png"
+    },{
+        caption: "五福旅遊網 - 產品明細頁1",
+        captionDesc: "顯示團體產品詳細資料",
+        imgName: "lifetour4.png"
+    },{
+        caption: "五福旅遊網 - 產品明細頁2",
+        captionDesc: "顯示團體產品詳細資料",
+        imgName: "lifetour5.png"
+    },{
+        caption: "五福旅遊網 - 產品明細頁3",
+        captionDesc: "顯示團體產品詳細資料",
+        imgName: "lifetour6.png"
+    },{
+        caption: "五福旅遊網 - 產品明細頁4(手機版)",
+        captionDesc: "顯示團體產品詳細資料",
+        imgName: "lifetour7.png"
+    }],
     lionbobby: [{
         caption: "雄保旅遊網 - 搜尋結果頁",
         captionDesc: "顯示產品列表、包含月曆選團、比較、加入收藏、看過紀錄等功能",
