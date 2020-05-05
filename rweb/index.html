@@ -16,7 +16,6 @@
             display: none;
         }
 
-
         .caption div {
             font-size: 2.5vmin;
             color: #636161;
@@ -28,6 +27,7 @@
             margin-left: 5px;
             font-weight: bold;
         }
+
     </style>
 </head>
 
@@ -156,6 +156,37 @@
             <h2>曾參與過的專案</h2>
             <div class="row">
                 <div class="row">
+
+                    <!--五福 Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/lionbobby1.jpg" class="image fit thumb"><img
+                                src="images/fulls/lifetour.png" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>雄保旅遊網 - 首頁</div>
+                            <div><span class="cationSpan"></span></div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>五福旅遊網</h3>
+                        <p>旅遊產品購買、報名</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.lionbobby" v-bind:item="item"></sub-article>
+                    <!--五福 End-->
+
+                    <!--五福ERP Start-->
+                    <article class="12u$(xsmall) work-item 6u">
+                        <a href="images/thumbs/lionbobby1.jpg" class="image fit thumb"><img
+                                src="images/fulls/lifetour-erp.png" /></a>
+                        <div class="hidContent">
+                            <div><span class="cationSpan">標題：</span>雄保旅遊網 - 首頁</div>
+                            <div><span class="cationSpan"></span></div>
+                            <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                        </div>
+                        <h3>五福ERP</h3>
+                        <p>五福內部用系統</p>
+                    </article>
+                    <sub-article v-for="item in worksdata.lionbobby" v-bind:item="item"></sub-article>
+                    <!--五福ERP End-->
+
                     <!--雄保 Start-->
                     <article class="12u$(xsmall) work-item 6u">
                         <a href="images/thumbs/lionbobby1.jpg" class="image fit thumb"><img
