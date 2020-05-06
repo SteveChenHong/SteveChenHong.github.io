@@ -21,9 +21,66 @@ var worksdata = {
         imgName: "lifetour6.png"
     },{
         caption: "五福旅遊網 - 產品明細頁4(手機版)",
-        captionDesc: "顯示團體產品詳細資料",
+        captionDesc: "選擇旅客數量",
         imgName: "lifetour7.png"
-    }],
+    },{
+        caption: "五福旅遊網 - 產品明細列印頁1",
+        captionDesc: "列印頁",
+        imgName: "lifetour20.png"
+    },{
+        caption: "五福旅遊網 - 產品明細列印頁2",
+        captionDesc: "列印頁",
+        imgName: "lifetour21.png"
+    },{
+        caption: "五福旅遊網 - 選擇旅客數量1",
+        captionDesc: "選擇旅客數量",
+        imgName: "lifetour8.png"
+    },{
+        caption: "五福旅遊網 - 選擇旅客數量2",
+        captionDesc: "選擇旅客數量",
+        imgName: "lifetour9.png"
+    },{
+        caption: "五福旅遊網 - 選擇旅客數量3",
+        captionDesc: "選擇旅客數量",
+        imgName: "lifetour10.png"
+    },{
+        caption: "五福旅遊網 - 填寫旅客資料1",
+        captionDesc: "填寫旅客資料",
+        imgName: "lifetour11.png"
+    },{
+        caption: "五福旅遊網 - 填寫旅客資料2",
+        captionDesc: "填寫旅客資料",
+        imgName: "lifetour12.png"
+    },{
+        caption: "五福旅遊網 - 選擇付款方式1",
+        captionDesc: "選擇付款方式",
+        imgName: "lifetour13.png"
+    },{
+        caption: "五福旅遊網 - 選擇付款方式2",
+        captionDesc: "選擇付款方式",
+        imgName: "lifetour14.png"
+    },{
+        caption: "五福旅遊網 - 線上刷卡頁1",
+        captionDesc: "線上刷卡頁",
+        imgName: "lifetour15.png"
+    },{
+        caption: "五福旅遊網 - 線上刷卡頁2",
+        captionDesc: "線上刷卡頁",
+        imgName: "lifetour16.png"
+    },{
+        caption: "五福旅遊網 - 線上刷卡頁3",
+        captionDesc: "線上刷卡頁",
+        imgName: "lifetour17.png"
+    },{
+        caption: "五福旅遊網 - 線上刷卡頁4",
+        captionDesc: "線上刷卡頁",
+        imgName: "lifetour18.png"
+    },{
+        caption: "五福旅遊網 - 線上刷卡頁5(付款完成)",
+        captionDesc: "線上刷卡頁",
+        imgName: "lifetour19.png"
+    }
+],
     lionbobby: [{
         caption: "雄保旅遊網 - 搜尋結果頁",
         captionDesc: "顯示產品列表、包含月曆選團、比較、加入收藏、看過紀錄等功能",
