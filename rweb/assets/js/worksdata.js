@@ -1,5 +1,27 @@
 var worksdata = {
-    lifetour:[{
+    lifetourerp:[
+        {
+            caption: "五福ERP - 忘記密碼",
+            captionDesc: "提供忘記密碼功能，讓使用者可以自行處理，減少接電維護需求",
+            imgName: "lifetour-erp1-2.png"
+        },
+        {
+            caption: "五福ERP - 忘記密碼-輸入驗證碼",
+            captionDesc: "使用者忘記密碼在前一個步驟輸入公司mail，即會寄送一組驗整碼至信箱",
+            imgName: "lifetour-erp1-3.png"
+        },
+        {
+            caption: "五福ERP - 公告頁",
+            captionDesc: "發佈公告事項",
+            imgName: "lifetour-erp2.png"
+        },
+        {
+            caption: "五福ERP - 左側選單排序功能",
+            captionDesc: "提供使用者用拖曳的方式排序左側選單",
+            imgName: "lifetour-erp3.png"
+        }
+    ]
+    ,lifetour:[{
         caption: "五福旅遊網 - 搜尋結果頁2",
         captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
         imgName: "lifetour2.png"
