@@ -19,6 +19,31 @@ var worksdata = {
             caption: "五福ERP - 左側選單排序功能",
             captionDesc: "提供使用者用拖曳的方式排序左側選單",
             imgName: "lifetour-erp3.png"
+        },
+        {
+            caption: "五福ERP - 個人資訊",
+            captionDesc: "查看員工資料、修改密碼",
+            imgName: "lifetour-erp4.png"
+        },
+        {
+            caption: "五福ERP - 查增選單資料",
+            captionDesc: "查詢新增選單資料",
+            imgName: "lifetour-erp5.png"
+        },
+        {
+            caption: "五福ERP - 修改選單資料",
+            captionDesc: "修改選單資料",
+            imgName: "lifetour-erp6.png"
+        },
+        {
+            caption: "五福ERP - 查詢員工資料",
+            captionDesc: "查詢員工資料",
+            imgName: "lifetour-erp7.png"
+        },
+        {
+            caption: "五福ERP - 員工明細",
+            captionDesc: "修改及設定員工相關權限角色",
+            imgName: "lifetour-erp8.png"
         }
     ]
     ,lifetour:[{
