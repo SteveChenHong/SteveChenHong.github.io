@@ -44,6 +44,51 @@ var worksdata = {
             caption: "五福ERP - 員工明細",
             captionDesc: "修改及設定員工相關權限角色",
             imgName: "lifetour-erp8.png"
+        },
+        {
+            caption: "五福ERP - 設定員工角色權限",
+            captionDesc: "設定員工角色權限",
+            imgName: "lifetour-erp9.png"
+        },
+        {
+            caption: "五福ERP - 服務申請資料",
+            captionDesc: "服務申請資料列表",
+            imgName: "lifetour-erp10.png"
+        },
+        {
+            caption: "五福ERP - 服務申請資料",
+            captionDesc: "服務申請資料搜尋條件選擇員工",
+            imgName: "lifetour-erp11.png"
+        },
+        {
+            caption: "五福ERP - 新增服務申請",
+            captionDesc: "新增服務申請",
+            imgName: "lifetour-erp12.png"
+        },
+        {
+            caption: "五福ERP - 服務申請明細",
+            captionDesc: "服務申請明細",
+            imgName: "lifetour-erp13.png"
+        },
+        {
+            caption: "五福ERP - 修改服務明細",
+            captionDesc: "修改服務明細",
+            imgName: "lifetour-erp14.png"
+        },
+        {
+            caption: "五福ERP - 修改服務明細-存檔",
+            captionDesc: "修改服務明細-存檔",
+            imgName: "lifetour-erp15.png"
+        },
+        {
+            caption: "五福ERP - 修改服務明細-作廢",
+            captionDesc: "修改服務明細-作廢",
+            imgName: "lifetour-erp16.png"
+        },
+        {
+            caption: "五福ERP - 驗收服務明細-評分",
+            captionDesc: "驗收服務明細-評分",
+            imgName: "lifetour-erp17.png"
         }
     ]
     ,lifetour:[{
