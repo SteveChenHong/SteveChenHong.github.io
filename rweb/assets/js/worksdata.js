@@ -11,9 +11,24 @@ var worksdata = {
             imgName: "lifetour-erp1-3.png"
         },
         {
-            caption: "五福ERP - 公告頁",
-            captionDesc: "發佈公告事項",
+            caption: "五福ERP - 公告列表",
+            captionDesc: "查詢公告列表資料",
             imgName: "lifetour-erp2.png"
+        },
+        {
+            caption: "五福ERP - 瀏覽公告內容",
+            captionDesc: "瀏覽公告內容",
+            imgName: "lifetour-erp2-2.png"
+        },
+        {
+            caption: "五福ERP - 新修公告1",
+            captionDesc: "新修公告1",
+            imgName: "lifetour-erp2-3.png"
+        },
+        {
+            caption: "五福ERP - 新修公告2",
+            captionDesc: "新修公告2",
+            imgName: "lifetour-erp2-4.png"
         },
         {
             caption: "五福ERP - 左側選單排序功能",
@@ -89,12 +104,56 @@ var worksdata = {
             caption: "五福ERP - 驗收服務明細-評分",
             captionDesc: "驗收服務明細-評分",
             imgName: "lifetour-erp17.png"
+        },
+        {
+            caption: "五福ERP - 折價券列表資料",
+            captionDesc: "查詢折價券列表資料",
+            imgName: "lifetour-erp18.png"
+        },
+        {
+            caption: "五福ERP - 折價券列表資料(小尺寸)",
+            captionDesc: "查詢折價券列表資料",
+            imgName: "lifetour-erp19.png"
+        },
+        {
+            caption: "五福ERP - 新修折價券資料",
+            captionDesc: "新修折價券資料",
+            imgName: "lifetour-erp20.png"
+        },
+        {
+            caption: "五福ERP - 折價券處理1",
+            captionDesc: "折價券處理入庫",
+            imgName: "lifetour-erp21.png"
+        },
+        {
+            caption: "五福ERP - 折價券處理2",
+            captionDesc: "折價券處理領用",
+            imgName: "lifetour-erp22.png"
+        },
+        {
+            caption: "五福ERP - 折價券處理3",
+            captionDesc: "折價券處理核銷",
+            imgName: "lifetour-erp23.png"
+        },
+        {
+            caption: "五福ERP - 折價券處理4",
+            captionDesc: "折價券處理回收",
+            imgName: "lifetour-erp24.png"
+        },
+        {
+            caption: "五福ERP - 折價券報表",
+            captionDesc: "折價券報表",
+            imgName: "lifetour-erp25.png"
         }
     ]
     ,lifetour:[{
         caption: "五福旅遊網 - 搜尋結果頁2",
         captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
         imgName: "lifetour2.png"
+    },{
+        caption: "五福旅遊網 - 搜尋結果頁3",
+        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        imgName: "lifetour2-2.png"
     },{
         caption: "五福旅遊網 - 搜尋結果頁3(手機版)",
         captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
