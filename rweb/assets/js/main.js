@@ -119,7 +119,7 @@
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
 						popupCloserText: '',
-						popupLoaderText: '12345',
+						popupLoaderText: '',
 						selector: '.work-item a.image',
 						usePopupCaption: true,
 						usePopupDefaultStyling: false,
