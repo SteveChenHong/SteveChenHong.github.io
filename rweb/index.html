@@ -11,6 +11,7 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <link href="assets/css/circleProgress.css" rel="stylesheet" />
     <link href="assets/css/typedCss.css" rel="stylesheet" />
+    <link href="assets/css/lightgallery.css" rel="stylesheet" />
     <style>
         .displayNone {
             display: none;
@@ -53,7 +54,8 @@
                     關於我
                 </h2>
             </header>
-            <p style="text-indent:31px;">我現在擔任網頁程式設計師，身為IT人員我秉持著不斷從學習和實務中更強化自己的能力，期許自己能夠更上一層樓，讓自己成為可以在團隊合作或獨立製作中發揮所能的人才！
+            <p style="text-indent:31px;">
+                我現在擔任網頁程式設計師，身為IT人員我秉持著不斷從學習和實務中更強化自己的能力，期許自己能夠更上一層樓，讓自己成為可以在團隊合作或獨立製作中發揮所能的人才！
             </p>
             <!--<ul class="actions">
                 <li><a href="#" class="button">Learn More</a></li>
@@ -155,11 +157,11 @@
             <h2>曾參與過的專案</h2>
             <div class="row">
                 <div class="row">
-                     <template v-for="work in worksdata">
+                    <template v-for="work in worksdata">
                         <template v-for="item in work">
                             <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }" class="12u$(xsmall) work-item">
                                 <a :href="'images/thumbs/'+item.imgName" class="image fit thumb">
-                                    <img :data-src="'images/thumbs/'+item.imgName" />
+                                    <img :src="'images/thumbs/'+item.imgName" />
                                 </a>
                                 <div class="hidContent">
                                     <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
@@ -172,7 +174,7 @@
                                 <p>{{item.desc}}</p>
                             </article>
                         </template>
-                    </template> 
+                    </template>
                 </div>
             </div>
             <ul class="actions">
@@ -226,8 +228,11 @@
             <ul class="icons">
                 <!-- <li><a href="javascritp:void(0)" class="icon fa-facebook"><span
                             class="label">Facebook</span></a></li> -->
-                <li><a target="_blank" href="https://github.com/SteveChenHong" class="icon fa-github"><span
-                            class="label">Github</span></a></li>
+                <li>
+                    <a target="_blank" href="https://github.com/SteveChenHong" class="icon fa-github">
+                        <span class="label">Github</span>
+                    </a>
+                </li>
                 <!--<li><a onclick="toGetInTouch()" href="javascript:void(0)" class="icon fa-envelope-o"><span class="label">Email</span></a></li>-->
             </ul>
             <ul class="copyright">
@@ -246,6 +251,7 @@
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/worksdata.js"></script>
+
     <script>
         //---vue start
         var app = new Vue({
@@ -264,7 +270,7 @@
         })
 
         //---vue end
-        
+
         function toGetInTouch() {
             $(window).scrollTop($("#three").offset().top);
         }
@@ -276,7 +282,7 @@
             backDelay: 750, // pause before backspacing
             loop: false, // loop on or off (true or false)
             loopCount: false, // number of loops, false = infinite,
-            onStringTyped: function () {},
+            onStringTyped: function () { },
 
         }
         sentence1();
@@ -307,7 +313,7 @@
             $("#typed3").typed(
                 $.extend(initialTyped, {
                     strings: ["持續學習，追尋更好的自己"],
-                    callback: function () {}
+                    callback: function () { }
                 }));
         }
         //---typed end
@@ -331,7 +337,11 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-        //---topBtn end
+                        //---topBtn end
+
+
+        //--- lightgallery start
+        $("#two").lightGallery(); 
     </script>
 </body>
 
