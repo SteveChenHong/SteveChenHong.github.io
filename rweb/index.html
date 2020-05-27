@@ -158,12 +158,13 @@
                      <template v-for="work in worksdata">
                         <template v-for="item in work">
                             <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }"
-                                class="12u$(xsmall) work-item">
-                                <a :href="'images/thumbs/'+item.imgName" class="image fit thumb"><img
-                                        :src="'images/thumbs/'+item.imgName" /></a>
+                                     class="12u$(xsmall) work-item">
+                                <a style="width:100px;height:100px;display:block" :href="'images/thumbs/'+item.imgName" class="image fit thumb"></a>
+                                <!-- <img :src="'images/thumbs/'+item.imgName" /> -->
                                 <div class="hidContent">
                                     <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
-                                    <div v-if="item.captionDesc"><span class="cationSpan">說明：</span>{{item.captionDesc}}
+                                    <div v-if="item.captionDesc">
+                                        <span class="cationSpan">說明：</span>{{item.captionDesc}}
                                     </div>
                                     <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
                                 </div>
