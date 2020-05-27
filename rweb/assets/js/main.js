@@ -115,7 +115,8 @@
 				$window.on('load', function() {
 
 					$('#two').poptrox({
-					    caption: function ($a) { return $a.next("div").html(); },
+						preload:true,
+						caption: function (aaa) { return aaa.next("div").html(); },
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
 						popupCloserText: '',
