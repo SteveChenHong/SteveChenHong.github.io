@@ -52,7 +52,8 @@
             <h1>
                 <strong><span id="typed1"></span></strong><br />
                 <span id="typed2"></span><br />
-                <span id="typed3"></span>
+                <span id="typed3"></span><br />
+                <span id="typed4"></span>
             </h1>
         </div>
     </header>
@@ -325,8 +326,19 @@
         function sentence3() {
             $("#typed3").typed(
                 $.extend(initialTyped, {
-                    strings: ["持續學習，追尋更好的自己"],
-                    callback: function () {}
+                    strings: ["持續學習"],
+                    callback: function () {
+                        $(".typed-cursor").remove();
+                        sentence4();
+                    }
+                }));
+        }
+
+        function sentence4() {
+            $("#typed4").typed(
+                $.extend(initialTyped, {
+                    strings: ["追尋更好的自己"],
+                    callback: function () { }
                 }));
         }
         //---typed end
