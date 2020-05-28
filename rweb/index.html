@@ -31,11 +31,94 @@
             margin-left: 5px;
             font-weight: bold;
         }
-        .skill{
+
+        .skill {
             display: flex;
             justify-content: center;
-            align-content:flex-start;
-            flex-wrap:wrap;
+            align-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: 605px) {
+            .skill {
+                justify-content: initial;
+            }
+
+            figure,
+            figcaption {
+                width: 55px !important;
+                height: 55px !important;
+            }
+
+            figure {
+                margin-bottom: 20px;
+            }
+
+            figcaption {
+                padding: 0 0 !important;
+                border: 10px solid #f0f0f0 !important;
+            }
+
+            .outer {
+                stroke-width: 11px;
+            }
+
+            .chart {
+                font-size: 10px !important;
+            }
+
+            figure img {
+                max-width: 42px !important;
+            }
+
+            .mvc {
+                top: 17px;
+                left: 16px;
+            }
+
+            .sql {
+                top: 30px;
+                left: 17px;
+            }
+
+            .html {
+                top: 20px;
+                left: 16px;
+            }
+
+            .css {
+                max-width: 38px !important;
+                top: 20px;
+                left: 18px;
+
+
+            }
+
+            .javascript {
+                max-width: 36px !important;
+                top: 20px;
+                left: 20px;
+            }
+
+            .bootstrap {
+                top: 19px;
+                left: 17px;
+            }
+
+            .jquery {
+                top: 34px;
+                left: 16px;
+            }
+
+            .knockout {
+                top: 31px;
+                left: 17px;
+            }
+
+            .vue {
+                top: 23px;
+                left: 17px;
+            }
         }
     </style>
 </head>
@@ -80,7 +163,7 @@
             <div class="skill">
                 <!-- .net mvc Chart -->
                 <figure title=".NET" class="chart" data-percent="80">
-                    <figcaption>.netmvc</figcaption>
+                    <figcaption></figcaption>
                     <img class="mvc" src="images/skill/netcore.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -89,7 +172,7 @@
 
                 <!-- SQL Server Chart -->
                 <figure title="SQL Server" class="chart" data-percent="75">
-                    <figcaption>SQL</figcaption>
+                    <figcaption></figcaption>
                     <img class="sql" src="images/skill/sqlserver.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -98,7 +181,7 @@
 
                 <!-- HTML Chart -->
                 <figure title="HTML5" class="chart" data-percent="80">
-                    <figcaption>HTML</figcaption>
+                    <figcaption></figcaption>
                     <img class="html" src="images/skill/html.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -107,7 +190,7 @@
 
                 <!-- CSS Chart -->
                 <figure title="CSS" class="chart" data-percent="60">
-                    <figcaption>CSS</figcaption>
+                    <figcaption></figcaption>
                     <img class="css" src="images/skill/css.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -116,7 +199,7 @@
 
                 <!-- JavaScript Chart -->
                 <figure title="JavaScript" class="chart" data-percent="75">
-                    <figcaption>Javascript</figcaption>
+                    <figcaption></figcaption>
                     <img class="javascript" src="images/skill/javascript.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -125,7 +208,7 @@
 
                 <!-- Bootstrap Chart -->
                 <figure title="Bootstrap" class="chart" data-percent="50">
-                    <figcaption>Bootstrap</figcaption>
+                    <figcaption></figcaption>
                     <img class="bootstrap" src="images/skill/bootstrap.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -134,7 +217,7 @@
 
                 <!-- jQuery Chart -->
                 <figure title="jQuery" class="chart" data-percent="80">
-                    <figcaption>jQuery</figcaption>
+                    <figcaption></figcaption>
                     <img class="jquery" src="images/skill/jquery.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -143,7 +226,7 @@
 
                 <!-- Knockout.js JS Chart -->
                 <figure title="Knockout.js" class="chart" data-percent="50">
-                    <figcaption>Knockout</figcaption>
+                    <figcaption></figcaption>
                     <img class="knockout" src="images/skill/knockoutjs.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -152,7 +235,7 @@
 
                 <!-- Vue.js Chart -->
                 <figure title="Vue.js" class="chart" data-percent="50">
-                    <figcaption>Vue</figcaption>
+                    <figcaption></figcaption>
                     <img class="vue" src="images/skill/vuejs.png">
                     <svg width="200" height="200">
                         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
@@ -168,7 +251,8 @@
                 <div class="row">
                     <template v-for="work in worksdata">
                         <template v-for="item in work">
-                            <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }" class="12u$(xsmall) work-item">
+                            <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }"
+                                class="12u$(xsmall) work-item">
                                 <a :href="'images/thumbs/'+item.imgName" class="image fit thumb">
                                     <img :data-src="'images/thumbs/'+item.imgName" />
                                 </a>
@@ -291,7 +375,7 @@
             backDelay: 750, // pause before backspacing
             loop: false, // loop on or off (true or false)
             loopCount: false, // number of loops, false = infinite,
-            onStringTyped: function () { },
+            onStringTyped: function () {},
 
         }
         sentence1();
@@ -322,7 +406,7 @@
             $("#typed3").typed(
                 $.extend(initialTyped, {
                     strings: ["持續學習，追尋更好的自己"],
-                    callback: function () { }
+                    callback: function () {}
                 }));
         }
         //---typed end
@@ -346,7 +430,38 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-                        //---topBtn end
+        //---topBtn end
+
+        function CheckWindowSizeOnMobile() {
+            var windowWidth = $(window).outerWidth(true);
+            if (windowWidth <= 588) {
+                $("circle").attr({
+                    cx: "152",
+                    cy: "37",
+                    r: "32"
+                });
+                $("figure svg").attr({
+                    width: "75",
+                    height: "75"
+                })
+                //$("figure img").hide();
+            } else {
+                $("circle").attr({
+                    cx: "95",
+                    cy: "95",
+                    r: "85"
+                });
+                $("figure svg").attr({
+                    width: "200",
+                    height: "200"
+                })
+                //$("figure img").show();
+            }
+        }
+        $(window).resize(function () {
+            CheckWindowSizeOnMobile();
+        });
+        CheckWindowSizeOnMobile();
     </script>
 </body>
 
