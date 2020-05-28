@@ -12,6 +12,10 @@
     <link href="assets/css/circleProgress.css" rel="stylesheet" />
     <link href="assets/css/typedCss.css" rel="stylesheet" />
     <style>
+        body {
+            font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+        }
+
         .displayNone {
             display: none;
         }
@@ -26,6 +30,12 @@
         .cationSpan {
             margin-left: 5px;
             font-weight: bold;
+        }
+        .skill{
+            display: flex;
+            justify-content: center;
+            align-content:flex-start;
+            flex-wrap:wrap;
         }
     </style>
 </head>
@@ -66,88 +76,88 @@
                     技能
                 </h2>
             </header>
+            <div class="skill">
+                <!-- .net mvc Chart -->
+                <figure title=".NET" class="chart" data-percent="80">
+                    <figcaption>.netmvc</figcaption>
+                    <img class="mvc" src="images/skill/netcore.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- .net mvc Chart -->
-            <figure title=".NET" class="chart" data-percent="80">
-                <figcaption>.netmvc</figcaption>
-                <img class="mvc" src="images/skill/netcore.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
+                <!-- SQL Server Chart -->
+                <figure title="SQL Server" class="chart" data-percent="75">
+                    <figcaption>SQL</figcaption>
+                    <img class="sql" src="images/skill/sqlserver.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- SQL Server Chart -->
-            <figure title="SQL Server" class="chart" data-percent="75">
-                <figcaption>SQL</figcaption>
-                <img class="sql" src="images/skill/sqlserver.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
+                <!-- HTML Chart -->
+                <figure title="HTML5" class="chart" data-percent="80">
+                    <figcaption>HTML</figcaption>
+                    <img class="html" src="images/skill/html.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- HTML Chart -->
-            <figure title="HTML5" class="chart" data-percent="80">
-                <figcaption>HTML</figcaption>
-                <img class="html" src="images/skill/html.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
+                <!-- CSS Chart -->
+                <figure title="CSS" class="chart" data-percent="60">
+                    <figcaption>CSS</figcaption>
+                    <img class="css" src="images/skill/css.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- CSS Chart -->
-            <figure title="CSS" class="chart" data-percent="60">
-                <figcaption>CSS</figcaption>
-                <img class="css" src="images/skill/css.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
+                <!-- JavaScript Chart -->
+                <figure title="JavaScript" class="chart" data-percent="75">
+                    <figcaption>Javascript</figcaption>
+                    <img class="javascript" src="images/skill/javascript.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- JavaScript Chart -->
-            <figure title="JavaScript" class="chart" data-percent="75">
-                <figcaption>Javascript</figcaption>
-                <img class="javascript" src="images/skill/javascript.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
+                <!-- Bootstrap Chart -->
+                <figure title="Bootstrap" class="chart" data-percent="50">
+                    <figcaption>Bootstrap</figcaption>
+                    <img class="bootstrap" src="images/skill/bootstrap.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- Bootstrap Chart -->
-            <figure title="Bootstrap" class="chart" data-percent="50">
-                <figcaption>Bootstrap</figcaption>
-                <img class="bootstrap" src="images/skill/bootstrap.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
+                <!-- jQuery Chart -->
+                <figure title="jQuery" class="chart" data-percent="80">
+                    <figcaption>jQuery</figcaption>
+                    <img class="jquery" src="images/skill/jquery.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- jQuery Chart -->
-            <figure title="jQuery" class="chart" data-percent="80">
-                <figcaption>jQuery</figcaption>
-                <img class="jquery" src="images/skill/jquery.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
+                <!-- Knockout.js JS Chart -->
+                <figure title="Knockout.js" class="chart" data-percent="50">
+                    <figcaption>Knockout</figcaption>
+                    <img class="knockout" src="images/skill/knockoutjs.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
 
-            <!-- Knockout.js JS Chart -->
-            <figure title="Knockout.js" class="chart" data-percent="50">
-                <figcaption>Knockout</figcaption>
-                <img class="knockout" src="images/skill/knockoutjs.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
-
-            <!-- Vue.js Chart -->
-            <figure title="Vue.js" class="chart" data-percent="50">
-                <figcaption>Vue</figcaption>
-                <img class="vue" src="images/skill/vuejs.png">
-                <svg width="200" height="200">
-                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
-                </svg>
-            </figure>
-
+                <!-- Vue.js Chart -->
+                <figure title="Vue.js" class="chart" data-percent="50">
+                    <figcaption>Vue</figcaption>
+                    <img class="vue" src="images/skill/vuejs.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+            </div>
         </section>
 
         <!-- Two -->
@@ -155,7 +165,7 @@
             <h2>曾參與過的專案</h2>
             <div class="row">
                 <div class="row">
-                     <template v-for="work in worksdata">
+                    <template v-for="work in worksdata">
                         <template v-for="item in work">
                             <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }"
                                 class="12u$(xsmall) work-item">
@@ -171,7 +181,7 @@
                                 <p>{{item.desc}}</p>
                             </article>
                         </template>
-                    </template> 
+                    </template>
                 </div>
             </div>
             <ul class="actions">
@@ -263,7 +273,7 @@
         })
 
         //---vue end
-        
+
         function toGetInTouch() {
             $(window).scrollTop($("#three").offset().top);
         }
