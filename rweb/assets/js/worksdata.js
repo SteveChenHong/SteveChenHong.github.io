@@ -4,43 +4,43 @@ var worksdata = {
         title: "五福旅遊網",
         desc: "旅遊產品購買、報名",
         caption: "五福旅遊網 - 搜尋結果頁1",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour1.png",
     }, {
         caption: "五福旅遊網 - 搜尋結果頁2",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour2.png"
     }, {
         caption: "五福旅遊網 - 搜尋結果頁3",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour2-2.png"
     }, {
         caption: "五福旅遊網 - 搜尋結果頁3(手機版)",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour3.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁1",
-        captionDesc: "顯示團體產品詳細資料",
+        captionDesc: "顯示團體產品詳細資料，有航班資訊、每日行程、產品特色、價格、須知等，包含月曆切換選擇其他團產、社群分享等功能",
         imgName: "lifetour4.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁2",
-        captionDesc: "顯示團體產品詳細資料",
+        captionDesc: "顯示團體產品詳細資料，有航班資訊、每日行程、產品特色、價格、須知等，包含月曆切換選擇其他團產、社群分享等功能",
         imgName: "lifetour5.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁3",
-        captionDesc: "顯示團體產品詳細資料",
+        captionDesc: "顯示團體產品詳細資料，有航班資訊、每日行程、產品特色、價格、須知等，包含月曆切換選擇其他團產、社群分享等功能",
         imgName: "lifetour6.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁4(手機版)",
-        captionDesc: "選擇旅客數量",
+        captionDesc: "",
         imgName: "lifetour7.png"
     }, {
         caption: "五福旅遊網 - 產品明細列印頁1",
-        captionDesc: "列印頁",
+        captionDesc: "列印、下載PDF、下載Word(只限內網)等功能",
         imgName: "lifetour20.png"
     }, {
         caption: "五福旅遊網 - 產品明細列印頁2",
-        captionDesc: "列印頁",
+        captionDesc: "列印、下載PDF、下載Word(只限內網)等功能",
         imgName: "lifetour21.png"
     }, {
         caption: "五福旅遊網 - 選擇旅客數量1",
