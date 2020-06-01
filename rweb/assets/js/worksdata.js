@@ -4,43 +4,43 @@ var worksdata = {
         title: "五福旅遊網",
         desc: "旅遊產品購買、報名",
         caption: "五福旅遊網 - 搜尋結果頁1",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour1.png",
     }, {
         caption: "五福旅遊網 - 搜尋結果頁2",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour2.png"
     }, {
         caption: "五福旅遊網 - 搜尋結果頁3",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour2-2.png"
     }, {
         caption: "五福旅遊網 - 搜尋結果頁3(手機版)",
-        captionDesc: "顯示產品列表、搜尋、進階篩選等功能",
+        captionDesc: "顯示產品列表、條件搜尋、進階篩選等功能",
         imgName: "lifetour3.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁1",
-        captionDesc: "顯示團體產品詳細資料",
+        captionDesc: "顯示團體產品詳細資料，有航班資訊、每日行程、產品特色、價格、須知等，包含月曆切換選擇其他團產、社群分享等功能",
         imgName: "lifetour4.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁2",
-        captionDesc: "顯示團體產品詳細資料",
+        captionDesc: "顯示團體產品詳細資料，有航班資訊、每日行程、產品特色、價格、須知等，包含月曆切換選擇其他團產、社群分享等功能",
         imgName: "lifetour5.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁3",
-        captionDesc: "顯示團體產品詳細資料",
+        captionDesc: "顯示團體產品詳細資料，有航班資訊、每日行程、產品特色、價格、須知等，包含月曆切換選擇其他團產、社群分享等功能",
         imgName: "lifetour6.png"
     }, {
         caption: "五福旅遊網 - 產品明細頁4(手機版)",
-        captionDesc: "選擇旅客數量",
+        captionDesc: "",
         imgName: "lifetour7.png"
     }, {
         caption: "五福旅遊網 - 產品明細列印頁1",
-        captionDesc: "列印頁",
+        captionDesc: "列印、下載PDF、下載Word(只限內網)等功能",
         imgName: "lifetour20.png"
     }, {
         caption: "五福旅遊網 - 產品明細列印頁2",
-        captionDesc: "列印頁",
+        captionDesc: "列印、下載PDF、下載Word(只限內網)等功能",
         imgName: "lifetour21.png"
     }, {
         caption: "五福旅遊網 - 選擇旅客數量1",
@@ -299,7 +299,7 @@ var worksdata = {
         caption: "hoogaa(學生端) - 輸入PIN碼",
         captionDesc: "學生輸入教師端所提供的代碼，即可進入等待競賽畫面",
         imgName: "hoogaa-student1.jpg",
-    },{
+    }, {
         caption: "hoogaa(學生端) - 輸入名稱",
         captionDesc: "輸入名稱或備註，供辨別身分",
         imgName: "hoogaa-student2.jpg"
@@ -337,7 +337,7 @@ var worksdata = {
         caption: "hoogaa(教師端) - 產生PIN碼、等待學生進入",
         captionDesc: "產生PIN碼提供給學生輸入、檢視當前進入的學生",
         imgName: "hoogaa-teacher1.jpg",
-    },{
+    }, {
         caption: "hoogaa(教師端) - 開始考試倒數",
         captionDesc: "教師端統一開始進入競賽倒數",
         imgName: "hoogaa-teacher2.jpg"
@@ -408,7 +408,7 @@ var worksdata = {
         caption: "Mosme摩斯米 - 首頁",
         captionDesc: "輸入關鍵字可快速搜尋相關書籍資料",
         imgName: "mosme1.jpg",
-    },{
+    }, {
         caption: "Mosme摩斯米 - 書籍列表",
         captionDesc: "顯示書籍產品",
         imgName: "mosme2.jpg"
@@ -486,7 +486,7 @@ var worksdata = {
         caption: "設計資源庫(前台) - 首頁",
         captionDesc: "可以直接輸入關鍵字查詢元件，或選擇的元件分類",
         imgName: "designFont1.jpg",
-    },{
+    }, {
         caption: "設計資源庫(前台) - 登入",
         captionDesc: "登入集團ERP系統之帳號密碼",
         imgName: "designFont2.jpg"
@@ -530,7 +530,7 @@ var worksdata = {
         caption: "設計資源庫(後台) - 登入",
         captionDesc: "登入公司ERP系統帳號密碼",
         imgName: "designBack1.jpg",
-    },{
+    }, {
         caption: "設計資源庫(後台) - 首頁",
         captionDesc: "公告操作(前台可以看到這裡新增的公告)",
         imgName: "designBack2.jpg"
