@@ -247,40 +247,60 @@
         <!-- Two -->
         <section id="two">
             <h2>曾參與過的專案</h2>
-            <div class="row">
-                <div class="row">
-                    <template v-for="work in worksdata">
-                        <template v-for="item in work">
-                            <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }"
-                                class="12u$(xsmall) work-item">
-                                <a :href="'images/thumbs/'+item.imgName" class="image fit thumb">
-                                    <img :data-src="'images/thumbs/'+item.imgName" />
-                                </a>
-                                <div class="hidContent">
-                                    <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
-                                    <div v-if="item.captionDesc">
-                                        <span class="cationSpan">說明：</span>{{item.captionDesc}}
-                                    </div>
-                                    <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
-                                </div>
-                                <h3>{{item.title}}</h3>
-                                <p>{{item.desc}}</p>
-                            </article>
-                        </template>
-                    </template>
-                </div>
+            <div class="row main-load">
+                <div class="row main-content" style="display: none;"></div>
+                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" /></a>
+                </article>
+                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" /></a>
+                </article>
+                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" /></a>
+                </article>
+                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" /></a>
+                </article>
+                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" /></a>
+                </article>
+                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" /></a>
+                </article>
             </div>
-            <ul class="actions">
-                <!-- <li><a href="#" class="button">Full Portfolio</a></li>-->
-            </ul>
-        </section>
+            <div class="row main-content" style="display: none;">
+                <template v-for="work in worksdata">
+                    <template v-for="item in work">
+                        <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }"
+                            class="12u$(xsmall) work-item">
+                            <a :href="'images/thumbs/'+item.imgName" class="image fit thumb">
+                                <img :data-src="'images/thumbs/'+item.imgName" />
+                            </a>
+                            <div class="hidContent">
+                                <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
+                                <div v-if="item.captionDesc">
+                                    <span class="cationSpan">說明：</span>{{item.captionDesc}}
+                                </div>
+                                <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                            </div>
+                            <h3>{{item.title}}</h3>
+                            <p>{{item.desc}}</p>
+                        </article>
+                    </template>
+                </template>
+            </div>
+    </div>
+    <ul class="actions">
+        <!-- <li><a href="#" class="button">Full Portfolio</a></li>-->
+    </ul>
+    </section>
 
-        <!-- Three -->
-        <section id="three">
-            <h2>聯絡我</h2>
-            <!--<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>-->
-            <div class="row">
-                <!--<div class="8u 12u$(small)">
+    <!-- Three -->
+    <section id="three">
+        <h2>聯絡我</h2>
+        <!--<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>-->
+        <div class="row">
+            <!--<div class="8u 12u$(small)">
                     <form method="post" action="#">
                         <div class="row uniform 50%">
                             <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -292,24 +312,24 @@
                         <li><input type="submit" value="Send Message" /></li>
                     </ul>
                 </div>-->
-                <div class="4u$ 12u$(small)">
-                    <ul class="labeled-icons">
-                        <!-- <li>
+            <div class="4u$ 12u$(small)">
+                <ul class="labeled-icons">
+                    <!-- <li>
                             <h3 class="icon fa-home"><span class="label">Address</span></h3>
                             台灣<br/>新北市新莊區<br />
                         </li> -->
-                        <li>
-                            <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-                            +886 0939660599
-                        </li>
-                        <li>
-                            <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-                            <a href="mailto:s502172003@gmail.com">s502172003@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li>
+                        <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                        +886 0939660599
+                    </li>
+                    <li>
+                        <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                        <a href="mailto:s502172003@gmail.com">s502172003@gmail.com</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
 
 
@@ -462,6 +482,11 @@
             CheckWindowSizeOnMobile();
         });
         CheckWindowSizeOnMobile();
+
+        $(window).load(function () {
+            $(".main-load").hide();
+            $(".main-content").show();
+        });
     </script>
 </body>
 
