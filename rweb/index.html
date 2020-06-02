@@ -38,8 +38,6 @@
             align-content: flex-start;
             flex-wrap: wrap;
         }
-
-        
     </style>
 </head>
 
@@ -170,30 +168,42 @@
             <h2>曾參與過的專案</h2>
             <div class="row main-load">
                 <div class="row main-content" style="display: none;"></div>
-                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" /></a>
+                <article class="12u$(xsmall) work-item 6u">
+                    <a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" />
+                    </a>
                 </article>
-                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" /></a>
+                <article class="12u$(xsmall) work-item 6u">
+                    <a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" />
+                    </a>
                 </article>
-                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" /></a>
+                <article class="12u$(xsmall) work-item 6u">
+                    <a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" />
+                    </a>
                 </article>
-                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" /></a>
+                <article class="12u$(xsmall) work-item 6u">
+                    <a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" />
+                    </a>
                 </article>
-                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" /></a>
+                <article class="12u$(xsmall) work-item 6u">
+                    <a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" />
+                    </a>
                 </article>
-                <article class="12u$(xsmall) work-item 6u"><a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" /></a>
+                <article class="12u$(xsmall) work-item 6u">
+                    <a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" />
+                    </a>
                 </article>
             </div>
             <div class="row main-content" style="display: none;">
                 <template v-for="work in worksdata">
                     <template v-for="item in work">
                         <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }"
-                            class="12u$(xsmall) work-item">
+                                 class="12u$(xsmall) work-item">
                             <a :href="'images/thumbs/'+item.imgName" class="image fit thumb">
                                 <img :data-src="'images/thumbs/'+item.imgName" />
                             </a>
@@ -210,47 +220,46 @@
                     </template>
                 </template>
             </div>
-    </div>
-    <ul class="actions">
-        <!-- <li><a href="#" class="button">Full Portfolio</a></li>-->
-    </ul>
-    </section>
+            <ul class="actions">
+                <!-- <li><a href="#" class="button">Full Portfolio</a></li>-->
+            </ul>
+        </section>
 
-    <!-- Three -->
-    <section id="three">
-        <h2>聯絡我</h2>
-        <!--<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>-->
-        <div class="row">
-            <!--<div class="8u 12u$(small)">
-                    <form method="post" action="#">
-                        <div class="row uniform 50%">
-                            <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                            <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                            <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                        </div>
-                    </form>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
+        <!-- Three -->
+        <section id="three">
+            <h2>聯絡我</h2>
+            <!--<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>-->
+            <div class="row">
+                <!--<div class="8u 12u$(small)">
+                        <form method="post" action="#">
+                            <div class="row uniform 50%">
+                                <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                                <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                                <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                            </div>
+                        </form>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </div>-->
+                <div class="4u$ 12u$(small)">
+                    <ul class="labeled-icons">
+                        <!-- <li>
+                                <h3 class="icon fa-home"><span class="label">Address</span></h3>
+                                台灣<br/>新北市新莊區<br />
+                            </li> -->
+                        <li>
+                            <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                            <a href="tel:+886-939660599">0939660599</a>
+                        </li>
+                        <li>
+                            <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                            <a href="mailto:s502172003@gmail.com">s502172003@gmail.com</a>
+                        </li>
                     </ul>
-                </div>-->
-            <div class="4u$ 12u$(small)">
-                <ul class="labeled-icons">
-                    <!-- <li>
-                            <h3 class="icon fa-home"><span class="label">Address</span></h3>
-                            台灣<br/>新北市新莊區<br />
-                        </li> -->
-                    <li>
-                        <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-                        +886 0939660599
-                    </li>
-                    <li>
-                        <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-                        <a href="mailto:s502172003@gmail.com">s502172003@gmail.com</a>
-                    </li>
-                </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
@@ -316,7 +325,7 @@
             backDelay: 750, // pause before backspacing
             loop: false, // loop on or off (true or false)
             loopCount: false, // number of loops, false = infinite,
-            onStringTyped: function () {},
+            onStringTyped: function () { },
 
         }
         sentence1();
