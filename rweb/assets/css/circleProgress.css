@@ -311,10 +311,17 @@ figure * {
     }
 }
 
+#skill-mobile-indicator {
+    display: none;
+}
+
 @media only screen and (max-width: 605px) {
    /* .skill {
         justify-content: start!important;
     }*/
+    #skill-mobile-indicator {
+        display: block;
+    }
 
     figure,
     figcaption {

@@ -42,6 +42,7 @@
         .work-item-load {
             margin: 0 0 2em 0;
         }
+
     </style>
 </head>
 
@@ -262,6 +263,8 @@
             </ul>
         </div>
     </footer>
+
+    <div id="skill-mobile-indicator"></div>
     <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
 
     <!-- Scripts -->
@@ -373,8 +376,7 @@
         //---topBtn end
 
         function CheckWindowSizeOnMobile() {
-            var windowWidth = $(window).outerWidth(true);
-            if (windowWidth < 588) {
+            if ($('#skill-mobile-indicator').is(':visible')) {
                 $("circle").attr({
                     cx: "153",
                     cy: "37",
