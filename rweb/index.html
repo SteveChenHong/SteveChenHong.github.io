@@ -38,6 +38,10 @@
             align-content: flex-start;
             flex-wrap: wrap;
         }
+
+        .work-item-load {
+            margin: 0 0 2em 0;
+        }
     </style>
 </head>
 
@@ -168,32 +172,7 @@
             <h2>曾參與過的專案</h2>
             <div class="row main-load">
                 <div class="row main-content" style="display: none;"></div>
-                <article class="12u$(xsmall) work-item 6u">
-                    <a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" />
-                    </a>
-                </article>
-                <article class="12u$(xsmall) work-item 6u">
-                    <a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" />
-                    </a>
-                </article>
-                <article class="12u$(xsmall) work-item 6u">
-                    <a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" />
-                    </a>
-                </article>
-                <article class="12u$(xsmall) work-item 6u">
-                    <a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" />
-                    </a>
-                </article>
-                <article class="12u$(xsmall) work-item 6u">
-                    <a class="image fit" style="outline: 0px;">
-                        <img src="images/fulls/loading.gif" />
-                    </a>
-                </article>
-                <article class="12u$(xsmall) work-item 6u">
+                <article v-for="item in [1,2,3,4,5,6]" class="12u$(xsmall) work-item-load 6u">
                     <a class="image fit" style="outline: 0px;">
                         <img src="images/fulls/loading.gif" />
                     </a>
@@ -395,7 +374,7 @@
 
         function CheckWindowSizeOnMobile() {
             var windowWidth = $(window).outerWidth(true);
-            if (windowWidth <= 588) {
+            if (windowWidth < 588) {
                 $("circle").attr({
                     cx: "153",
                     cy: "37",
