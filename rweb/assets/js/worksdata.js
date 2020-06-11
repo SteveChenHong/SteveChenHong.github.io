@@ -114,18 +114,23 @@ var worksdata = {
         imgName: "lifetour-erp2.png"
     },
     {
+        caption: "五福ERP - 公告維護列表",
+        captionDesc: "查詢公告維護列表資料",
+        imgName: "lifetour-erp2-1.png"
+    },
+    {
         caption: "五福ERP - 瀏覽公告內容",
         captionDesc: "瀏覽公告內容",
         imgName: "lifetour-erp2-2.png"
     },
     {
-        caption: "五福ERP - 新修公告1",
-        captionDesc: "新修公告1",
+        caption: "五福ERP - 設定公告模式",
+        captionDesc: "設定公告模式",
         imgName: "lifetour-erp2-3.png"
     },
     {
-        caption: "五福ERP - 新修公告2",
-        captionDesc: "新修公告2",
+        caption: "五福ERP - 新修公告",
+        captionDesc: "新修公告，附件可用拖拉的方式新增",
         imgName: "lifetour-erp2-4.png"
     },
     {
