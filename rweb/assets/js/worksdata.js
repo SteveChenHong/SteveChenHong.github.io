@@ -247,6 +247,11 @@ var worksdata = {
         caption: "五福ERP - 折價券報表",
         captionDesc: "折價券報表",
         imgName: "lifetour-erp25.png"
+    },
+    {
+        caption: "五福ERP - 考勤查詢",
+        captionDesc: "考勤查詢",
+        imgName: "lifetour-erp26.png"
     }
     ],
     lionbobby: [{
