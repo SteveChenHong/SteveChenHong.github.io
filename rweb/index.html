@@ -1,0 +1,411 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Steve 's resume.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link href="assets/css/circleProgress.css" rel="stylesheet" />
+    <link href="assets/css/typedCss.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+        }
+
+        .displayNone {
+            display: none;
+        }
+
+        .caption div {
+            font-size: 2.5vmin;
+            color: #636161;
+            /*padding-bottom: 2px;*/
+            text-align: left;
+        }
+
+        .cationSpan {
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        .skill {
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .work-item-load {
+            margin: 0 0 2em 0;
+        }
+
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="#" class="image avatar"><img src="images/my.jpg" alt="" /></a>
+            <h1>
+                <strong><span id="typed1"></span></strong><br />
+                <span id="typed2"></span><br />
+                <span id="typed3"></span><br />
+                <span id="typed4"></span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        <!-- One -->
+        <section id="one">
+            <header class="major">
+                <h2>
+                    關於我
+                </h2>
+            </header>
+            <p style="text-indent:31px;">
+                我現在擔任網頁程式設計師，身為IT人員我秉持著不斷從學習和實務中更強化自己的能力，期許自己能夠更上一層樓，讓自己成為可以在團隊合作或獨立製作中發揮所能的人才！
+            </p>
+            <!--<ul class="actions">
+                <li><a href="#" class="button">Learn More</a></li>
+            </ul>-->
+        </section>
+        <!--One -2 -->
+        <section id="one_2">
+            <header>
+                <h2>
+                    技能
+                </h2>
+            </header>
+            <div class="skill">
+                <!-- .net Chart -->
+                <figure title=".NET" class="chart" data-percent="80">
+                    <figcaption></figcaption>
+                    <img class="net" src="images/skill/net.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- SQL Server Chart -->
+                <figure title="SQL Server" class="chart" data-percent="75">
+                    <figcaption></figcaption>
+                    <img class="sql" src="images/skill/sqlserver.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- HTML Chart -->
+                <figure title="HTML5" class="chart" data-percent="80">
+                    <figcaption></figcaption>
+                    <img class="html" src="images/skill/html.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- CSS Chart -->
+                <figure title="CSS" class="chart" data-percent="70">
+                    <figcaption></figcaption>
+                    <img class="css" src="images/skill/css.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- JavaScript Chart -->
+                <figure title="JavaScript" class="chart" data-percent="80">
+                    <figcaption></figcaption>
+                    <img class="javascript" src="images/skill/javascript.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- jQuery Chart -->
+                <figure title="jQuery" class="chart" data-percent="90">
+                    <figcaption></figcaption>
+                    <img class="jquery" src="images/skill/jquery.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- Vue.js Chart -->
+                <figure title="Vue.js" class="chart" data-percent="60">
+                    <figcaption></figcaption>
+                    <img class="vue" src="images/skill/vuejs.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- Bootstrap Chart -->
+                <figure title="Bootstrap" class="chart" data-percent="50">
+                    <figcaption></figcaption>
+                    <img class="bootstrap" src="images/skill/bootstrap.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+
+                <!-- Knockout.js JS Chart -->
+                <figure title="Knockout.js" class="chart" data-percent="50">
+                    <figcaption></figcaption>
+                    <img class="knockout" src="images/skill/knockoutjs.png">
+                    <svg width="200" height="200">
+                        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)" />
+                    </svg>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="two">
+            <h2>曾參與過的專案</h2>
+            <div class="row main-load">
+                <div class="row main-content" style="display: none;"></div>
+                <article v-for="item in [1,2,3,4,5,6]" class="12u$(xsmall) work-item-load 6u">
+                    <a class="image fit" style="outline: 0px;">
+                        <img src="images/fulls/loading.gif" />
+                    </a>
+                </article>
+            </div>
+            <div class="row main-content" style="display: none;">
+                <template v-for="work in worksdata">
+                    <template v-for="item in work">
+                        <article v-bind:class="{ 'displayNone':!item.first, '6u':item.first }"
+                                 class="12u$(xsmall) work-item">
+                            <a :href="'images/thumbs/'+item.imgName" class="image fit thumb">
+                                <img :data-src="'images/thumbs/'+item.imgName" />
+                            </a>
+                            <div class="hidContent">
+                                <div><span class="cationSpan">標題：</span>{{item.caption}}</div>
+                                <div v-if="item.captionDesc">
+                                    <span class="cationSpan">說明：</span>{{item.captionDesc}}
+                                </div>
+                                <span style="display: block;">(用滑鼠點擊圖片可左右切換)</span>
+                            </div>
+                            <h3>{{item.title}}</h3>
+                            <p>{{item.desc}}</p>
+                        </article>
+                    </template>
+                </template>
+            </div>
+            <ul class="actions">
+                <!-- <li><a href="#" class="button">Full Portfolio</a></li>-->
+            </ul>
+        </section>
+
+        <!-- Three -->
+        <section id="three">
+            <h2>聯絡我</h2>
+            <!--<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>-->
+            <div class="row">
+                <!--<div class="8u 12u$(small)">
+                        <form method="post" action="#">
+                            <div class="row uniform 50%">
+                                <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                                <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                                <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                            </div>
+                        </form>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </div>-->
+                <div class="4u$ 12u$(small)">
+                    <ul class="labeled-icons">
+                        <li>
+                            <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                            <a href="tel:+886-939660599">0939660599</a>
+                        </li>
+                        <li>
+                            <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                            <a href="mailto:s502172003@gmail.com">s502172003@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <!-- <li><a href="javascritp:void(0)" class="icon fa-facebook"><span
+                            class="label">Facebook</span></a></li> -->
+                <li>
+                    <a target="_blank" href="https://github.com/SteveChenHong" class="icon fa-github">
+                        <span class="label">Github</span>
+                    </a>
+                </li>
+                <!--<li><a onclick="toGetInTouch()" href="javascript:void(0)" class="icon fa-envelope-o"><span class="label">Email</span></a></li>-->
+            </ul>
+            <ul class="copyright">
+                <li>&copy; 2022 &nbsp;| &nbsp;Steve 's resume.</li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="skill-mobile-indicator"></div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/vue.min.js"></script>
+    <script src="assets/js/worksdata.js?v=0.0.1"></script>
+
+    <script>
+        //---vue start
+        var app = new Vue({
+            el: '#main',
+            data: worksdata,
+            mounted: function () {
+                this.$nextTick(function () {
+                    $("article").each(function (i, e) {
+                        if ($(this).hasClass("6u") || $(this).hasClass("6u$")) {
+                            var $img = $(this).find("img");
+                            $img.attr("src", $img.data("src"));
+                        }
+                    })
+                })
+            }
+        })
+
+        //---vue end
+
+        function toGetInTouch() {
+            $(window).scrollTop($("#three").offset().top);
+        }
+
+        //---typed start
+        var initialTyped = {
+            contentType: 'html',
+            typeSpeed: 100, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: false, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite,
+            onStringTyped: function () { },
+
+        }
+        sentence1();
+
+        function sentence1() {
+            $("#typed1").typed(
+                $.extend(initialTyped, {
+                    strings: ["嗨 ! 我是陳信宏"],
+                    callback: function () {
+                        $(".typed-cursor").remove();
+                        sentence2();
+                    } // call function after typing is done
+                }));
+        };
+
+        function sentence2() {
+            $("#typed2").typed(
+                $.extend(initialTyped, {
+                    strings: ["網站程式設計師"],
+                    callback: function () {
+                        $(".typed-cursor").remove();
+                        sentence3();
+                    } // call function after typing is done
+                }));
+        };
+
+        function sentence3() {
+            $("#typed3").typed(
+                $.extend(initialTyped, {
+                    strings: ["持續學習"],
+                    callback: function () {
+                        $(".typed-cursor").remove();
+                        sentence4();
+                    }
+                }));
+        }
+
+        function sentence4() {
+            $("#typed4").typed(
+                $.extend(initialTyped, {
+                    strings: ["追尋更好的自己"],
+                    callback: function () { }
+                }));
+        }
+        //---typed end
+
+        //---topBtn start
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        //---topBtn end
+
+        function CheckWindowSizeOnMobile() {
+            if ($('#skill-mobile-indicator').is(':visible')) {
+                $("circle").attr({
+                    cx: "153",
+                    cy: "37",
+                    r: "32"
+                });
+                $("figure svg").attr({
+                    width: "75",
+                    height: "75"
+                })
+                //$("figure img").hide();
+            } else {
+                $("circle").attr({
+                    cx: "95",
+                    cy: "95",
+                    r: "85"
+                });
+                $("figure svg").attr({
+                    width: "200",
+                    height: "200"
+                })
+                //$("figure img").show();
+            }
+        }
+        $(window).resize(function () {
+            CheckWindowSizeOnMobile();
+        });
+        CheckWindowSizeOnMobile();
+
+        $(window).load(function () {
+            $(".main-load").hide();
+            $(".main-content").show();
+        });
+    </script>
+</body>
+
+</html>
