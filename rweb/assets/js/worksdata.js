@@ -139,70 +139,70 @@ var worksdata = {
         captionDesc: "顯示瀏覽過的產品紀錄",
         imgName: "lionbobby11.jpg"
     }],
-    HoogaaStudent: [{
+    hoogaaStudent: [{
         first: true,
         title: "Hoogaa 答題競賽互動網(學生端)",
         desc: "即互動測驗，即時顯示作答與排名，提升競爭和趣味性",
         caption: "Hoogaa(學生端) - 輸入PIN碼",
         captionDesc: "學生輸入教師端所提供的代碼，即可進入等待競賽畫面",
-        imgName: "Hoogaa-student1.jpg",
+        imgName: "hoogaa-student1.jpg",
     }, {
         caption: "Hoogaa(學生端) - 輸入名稱",
         captionDesc: "輸入名稱或備註，供辨別身分",
-        imgName: "Hoogaa-student2.jpg"
+        imgName: "hoogaa-student2.jpg"
     },
     {
         caption: "Hoogaa(學生端) - 等待進入競賽",
         captionDesc: "輸入完基本資料後，進入等待考試畫面，等教師端統一開始競賽",
-        imgName: "Hoogaa-student3.jpg"
+        imgName: "hoogaa-student3.jpg"
     },
     {
         caption: "Hoogaa(學生端) - 作答畫面",
         captionDesc: "開始作答，時間倒計時，作答完或是時間到會顯示正確解答",
-        imgName: "Hoogaa-student4.jpg"
+        imgName: "hoogaa-student4.jpg"
     },
     {
         caption: "Hoogaa(學生端) - 即時排名",
         captionDesc: "學生每作答完一題，會即時顯示當前分數及排名狀況",
-        imgName: "Hoogaa-student5.jpg"
+        imgName: "hoogaa-student5.jpg"
     },
     {
         caption: "Hoogaa(學生端) - 個人競賽結果",
         captionDesc: "全部作答完後顯示競賽結果",
-        imgName: "Hoogaa-student6.jpg"
+        imgName: "hoogaa-student6.jpg"
     },
     {
         caption: "Hoogaa(學生端) - 查看競賽作答歷程",
         captionDesc: "顯示競賽作答歷程，學生可以看到作答時選擇的選項",
-        imgName: "Hoogaa-student7.jpg"
+        imgName: "hoogaa-student7.jpg"
     }
     ],
-    HoogaaTeacher: [{
+    hoogaaTeacher: [{
         first: true,
         title: "Hoogaa 答題競賽互動網(教師端)",
         desc: "即互動測驗，即時顯示作答與排名，提升競爭和趣味性",
         caption: "Hoogaa(教師端) - 產生PIN碼、等待學生進入",
         captionDesc: "產生PIN碼提供給學生輸入、檢視當前進入的學生",
-        imgName: "Hoogaa-teacher1.jpg",
+        imgName: "hoogaa-teacher1.jpg",
     }, {
         caption: "Hoogaa(教師端) - 開始考試倒數",
         captionDesc: "教師端統一開始進入競賽倒數",
-        imgName: "Hoogaa-teacher2.jpg"
+        imgName: "hoogaa-teacher2.jpg"
     },
     {
         caption: "Hoogaa(教師端) - 即時競賽結果",
         captionDesc: "即時看考生作答情況、排名",
-        imgName: "Hoogaa-teacher3.jpg"
+        imgName: "hoogaa-teacher3.jpg"
     },
     {
         caption: "Hoogaa(教師端) - 競賽最終結果",
         captionDesc: "顯示考生答題資訊報表、排名及分數",
-        imgName: "Hoogaa-teacher4.jpg"
+        imgName: "hoogaa-teacher4.jpg"
     },
     {
         caption: "Hoogaa(教師端) - 試題解析",
         captionDesc: "顯示試題解析、查看每題學生作答狀況",
-        imgName: "Hoogaa-teacher5.jpg"
+        imgName: "hoogaa-teacher5.jpg"
     }
     ],
     mosme: [{
