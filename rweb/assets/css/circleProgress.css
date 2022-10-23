@@ -469,6 +469,11 @@ figure * {
         left: 16px;
     }
 
+    .net {
+        top: 16px;
+        left: 16px;
+    }
+
     .sql {
         top: 30px;
         left: 17px;
